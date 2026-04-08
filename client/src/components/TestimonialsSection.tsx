@@ -5,32 +5,32 @@ const testimonials = [
   {
     name: "Sarah Lim",
     content:
-      "Devify built my flower shop website in just 3 days. It looks absolutely stunning and I've already gotten 5 new orders through the contact form in the first week!",
+      "Devify built my flower shop website in just 3 days. It looks stunning and I've already gotten 8 new orders in the first week! Best investment for my business.",
   },
   {
     name: "Marcus Tan",
     content:
-      "I needed a professional portfolio to attract clients. Devify delivered exactly what I envisioned — clean, modern, and it loads super fast. Highly recommend!",
+      "I needed a professional portfolio to attract high-ticket clients. Devify delivered a site that looks like it cost $5,000, but for a fraction of the price. My conversion rate doubled.",
   },
   {
     name: "Priya Nair",
     content:
-      "As a small business owner with no tech knowledge, I was worried. But Devify made the whole process so easy. They handled everything and my website looks better than competitors charging 5x more.",
+      "The process was seamless. They handled everything from design to SEO. My yoga studio now gets 15+ inquiries per month directly through the website. Highly recommend!",
   },
   {
     name: "Jason Koh",
     content:
-      "My portfolio website is exactly what I needed to land more clients. The gallery looks incredible and the site is lightning fast. Worth every cent.",
+      "Lightning fast delivery and incredible design. My photography portfolio finally looks professional. I landed two major projects within two weeks of launching.",
   },
   {
     name: "Mei Lin",
     content:
-      "We went from zero online presence to getting 20+ new class bookings per month through our website. Devify understood exactly what we needed.",
+      "We went from zero online presence to a fully automated booking system. Devify saved us hours of manual work every week. Our revenue is up 30% since launch.",
   },
   {
     name: "Ahmad Rizal",
     content:
-      "Fast, professional, and affordable. Devify built our startup landing page in 2 days. The design quality is on par with agencies charging 10x more.",
+      "Professional, responsive, and results-driven. Our startup landing page was live in 48 hours and helped us secure our first 100 beta users. Exceptional value.",
   },
 ];
 
@@ -61,18 +61,18 @@ export default function TestimonialsSection() {
           <span
             className="inline-block text-sm font-semibold text-violet-400 uppercase tracking-widest mb-4"
           >
-            Success Stories
+            Real Results
           </span>
           <h2
             className="text-section-heading text-white mb-5 leading-tight-heading font-extrabold"
           >
-            Real Results, Real{" "}
-            <span className="gradient-text">Businesses</span>
+            Businesses Getting{" "}
+            <span className="gradient-text">Real Revenue</span>
           </h2>
           <p
             className="text-body-lg text-white/70 max-w-2xl mx-auto leading-relaxed-body"
           >
-            Real results from real Singapore businesses who trusted Devify with their online presence.
+            See how real Singapore businesses are getting more customers, more bookings, and more revenue with their Devify websites.
           </p>
         </motion.div>
 

@@ -10,35 +10,35 @@ import { useLocation } from "wouter";
 const values = [
   {
     icon: Target,
-    title: "Results-Focused",
-    description: "We don't just build pretty websites. Every design decision is made to help you get more customers and grow your business.",
+    title: "Conversion-Driven",
+    description: "Every element is designed to convert. We don't build vanity projects—we build revenue machines that get you real customers and measurable results.",
     gradient: "from-blue-500 to-cyan-500",
   },
   {
     icon: Lightbulb,
-    title: "Modern Technology",
-    description: "We use the latest web technologies — React, Next.js, and modern hosting platforms — so your site is fast, secure, and future-proof.",
+    title: "Modern & Secure",
+    description: "Built with React, Next.js, and enterprise-grade hosting. Your site is fast, secure, SEO-optimized, and ready to scale from day one.",
     gradient: "from-violet-500 to-purple-500",
   },
   {
     icon: Heart,
-    title: "Client-First Approach",
-    description: "We listen before we build. Your goals, your brand, your customers — everything is considered before a single line of code is written.",
+    title: "Your Success Matters",
+    description: "We're invested in your success. We listen, understand your business goals, and build solutions that actually move the needle for you.",
     gradient: "from-pink-500 to-rose-500",
   },
   {
     icon: TrendingUp,
-    title: "Built to Grow",
-    description: "Your website grows with your business. Start with a basic site and upgrade as you scale — we'll be here every step of the way.",
+    title: "Scalable Solutions",
+    description: "Start small, grow big. Our websites scale with your business. Add features, expand functionality, and upgrade as you succeed.",
     gradient: "from-green-500 to-emerald-500",
   },
 ];
 
 const whyUs = [
-  { stat: "1–7", label: "Days delivery time" },
-  { stat: "SGD", label: "Local Singapore pricing" },
-  { stat: "SEO", label: "Built-in from day one" },
-  { stat: "24/7", label: "WhatsApp support" },
+  { stat: "3–7", label: "Days to live" },
+  { stat: "50+", label: "Happy clients" },
+  { stat: "100%", label: "Conversion optimized" },
+  { stat: "24h", label: "Response time" },
 ];
 
 export default function AboutSection() {
@@ -61,29 +61,25 @@ export default function AboutSection() {
             <span
               className="inline-block text-sm font-semibold text-blue-400 uppercase tracking-widest mb-4"
             >
-              The Devify Story
+              About Devify
             </span>
             <h2
               className="text-section-heading text-white mb-6 leading-tight-heading font-extrabold"
             >
-              When Your Website{" "}
-              <span className="gradient-text">Works for You</span>
+              We Build Websites That{" "}
+              <span className="gradient-text">Generate Revenue</span>
             </h2>
             <p
               className="text-body-lg text-white/60 mb-6 leading-relaxed-body"
               style={{ fontFamily: 'Manrope, sans-serif' }}
             >
-              Devify was born from a simple observation: too many great local businesses in Singapore
-              are losing customers because they don't have a professional online presence — or their
-              website looks like it was built in 2010.
+              Devify was founded to solve a real problem: Singapore businesses are losing customers to competitors with better online presence. Most web agencies build beautiful websites that don't convert. We're different.
             </p>
             <p
               className="text-white/60 text-lg leading-relaxed mb-8"
               style={{ fontFamily: 'Manrope, sans-serif' }}
             >
-              We fix that. We build modern, fast, and beautiful websites that make your business
-              look credible, rank on Google, and turn visitors into paying customers — all at a
-              price that actually makes sense for small businesses.
+              We build conversion-focused websites that look amazing AND generate real results. Fast delivery. Transparent pricing. Results that matter. That's the Devify promise.
             </p>
 
             {/* Quick stats */}

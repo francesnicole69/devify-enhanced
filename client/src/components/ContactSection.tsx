@@ -143,19 +143,18 @@ export default function ContactSection() {
           <span
             className="inline-block text-sm font-semibold text-blue-400 uppercase tracking-widest mb-4"
           >
-            Start Now
+            Get Started Today
           </span>
           <h2
             className="text-section-heading text-white mb-5 leading-tight-heading font-extrabold"
           >
-            Let's Make It{" "}
-            <span className="gradient-text">Happen</span>
+            Ready to Get Your{" "}
+            <span className="gradient-text">Website Live?</span>
           </h2>
           <p
             className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed"
           >
-            Tell us about your business and we'll get back to you within 24 hours with a
-            free quote and project timeline.
+            Tell us about your business and get a free consultation within 24 hours. No obligation. No pressure. Just honest advice on how we can help you get more customers.
           </p>
         </motion.div>
 

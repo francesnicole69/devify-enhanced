@@ -11,8 +11,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { label: "Home", href: "/home" },
   { label: "Services", href: "/services" },
-  { label: "Work", href: "/work" },
-  { label: "About", href: "/about" },
+  { label: "Solutions", href: "/work" },
   { label: "Pricing", href: "/pricing" },
   { label: "Contact", href: "/contact" },
 ];
@@ -124,7 +123,7 @@ export default function Navbar() {
               whileTap={{ scale: 0.95 }}
               className="btn-gradient px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-all duration-300"
             >
-              <span>Get a Free Quote</span>
+              <span>Start Your Website</span>
             </motion.button>
           </div>
 
@@ -170,7 +169,7 @@ export default function Navbar() {
                 onClick={() => handleNavClick("/contact")}
                 className="btn-gradient mt-4 px-5 py-3 rounded-lg text-sm font-semibold text-white text-center"
               >
-                <span>Get a Free Quote</span>
+                <span>Start Your Website</span>
               </button>
             </div>
           </motion.div>

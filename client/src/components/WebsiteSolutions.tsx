@@ -106,20 +106,20 @@ export default function WebsiteSolutions() {
             className="inline-block text-sm font-semibold text-blue-400 uppercase tracking-widest mb-4"
             style={{ fontFamily: 'Manrope, sans-serif' }}
           >
-            Our Services
+            Our Solutions
           </span>
           <h2
             className="text-section-heading text-white mb-5 leading-tight-heading font-extrabold"
             style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800 }}
           >
-            Website Solutions<br />
-            for <span className="gradient-text">Every Business</span>
+            Conversion-Focused<br />
+            <span className="gradient-text">Website Engineering</span>
           </h2>
           <p
             className="text-body-lg text-white/50 max-w-2xl mx-auto leading-relaxed-body"
             style={{ fontFamily: 'Manrope, sans-serif' }}
           >
-            We design and build modern websites tailored to different business needs. Choose what fits your goals.
+            We don't just build websites. We engineer digital experiences that drive growth, capture leads, and turn visitors into loyal customers.
           </p>
         </motion.div>
 

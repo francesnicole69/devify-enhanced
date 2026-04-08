@@ -12,9 +12,9 @@ import { useLocation } from "wouter";
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663458144952/b3kTzaCTUqwBSmavZkBJUd/devify-hero-bg-JTXXemxAHM8YkkSZ95hN28.webp";
 
 const stats = [
-  { value: "1–7", label: "Days to Launch", icon: Zap },
-  { value: "100%", label: "Mobile Responsive", icon: Shield },
-  { value: "5★", label: "Client Satisfaction", icon: Star },
+  { value: "3–7", label: "Days to Live", icon: Zap },
+  { value: "100%", label: "Conversion Optimized", icon: Shield },
+  { value: "24h", label: "Free Consultation", icon: Star },
 ];
 
 const containerVariants = {
@@ -107,8 +107,8 @@ export default function HeroSection() {
             variants={itemVariants}
             className="text-hero text-white font-extrabold"
           >
-            Build a Website<br />
-            That <span className="gradient-text">Sells</span>
+            Websites That<br />
+            <span className="gradient-text">Convert Visitors Into Customers</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -116,7 +116,7 @@ export default function HeroSection() {
             variants={itemVariants}
             className="text-body-lg text-white/70 max-w-3xl mx-auto leading-relaxed-body font-normal"
           >
-            Modern, mobile-responsive websites. Built by professionals. Affordable pricing. Fast delivery. Real results.
+            Professional websites built in 3–7 days. Mobile-optimized. Conversion-focused. Affordable. We don't just build websites—we build revenue machines for your business.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -130,7 +130,7 @@ export default function HeroSection() {
               whileTap={{ scale: 0.95 }}
               className="btn-gradient flex items-center gap-2 px-8 py-4 rounded-xl text-base font-semibold text-white shadow-lg shadow-blue-500/30 transition-all duration-300 w-full sm:w-auto justify-center group"
             >
-              <span>Request a Quote</span>
+              <span>Get Your Website in 3 Days</span>
               <motion.div
                 animate={isMobile ? {} : { x: [0, 4, 0] }}
                 transition={isMobile ? {} : { repeat: Infinity, duration: 2.5, ease: "easeInOut" }}

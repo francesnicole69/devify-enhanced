@@ -16,30 +16,30 @@ import {
 const services = [
   {
     icon: Zap,
-    title: "Lightning Fast Delivery",
+    title: "Launch in 3–7 Days",
     description:
-      "Get your website live in 1–7 days. We understand your business can't wait. Fast turnaround without compromising quality.",
+      "Stop waiting. Your website goes live fast. We deliver conversion-ready sites in under a week—so you start getting customers sooner.",
     gradient: "from-yellow-500 to-orange-500",
   },
   {
     icon: Smartphone,
-    title: "100% Mobile Optimized",
+    title: "Mobile-First Design",
     description:
-      "Every website we build is fully responsive. Your customers get a perfect experience on any device — phones, tablets, or desktops.",
+      "60% of users browse on mobile. We design for mobile first, ensuring lightning-fast load times and perfect experience on every device.",
     gradient: "from-violet-500 to-purple-500",
   },
   {
     icon: Search,
-    title: "Built for Conversions",
+    title: "Built to Convert",
     description:
-      "We don't just build pretty websites. Every design decision focuses on converting visitors into paying customers.",
+      "We design for results. Every page, button, and form is optimized to turn visitors into leads. Your website is a sales tool, not a brochure.",
     gradient: "from-green-500 to-emerald-500",
   },
   {
     icon: Globe,
-    title: "Affordable & Professional",
+    title: "Transparent Pricing",
     description:
-      "Premium quality design and development at an affordable price. No hidden fees. Transparent pricing that fits your budget.",
+      "No hidden fees. No surprise invoices. Fixed pricing that fits small businesses. You know exactly what you're paying—and what you're getting.",
     gradient: "from-blue-500 to-cyan-500",
   },
 ];
@@ -82,19 +82,18 @@ export default function ServicesSection({ showHeader = true, showCards = true }:
               <span
                 className="inline-block text-sm font-semibold text-blue-400 uppercase tracking-widest mb-4"
               >
-                Why Devify
+                Why Choose Devify
               </span>
               <h2
                 className="text-section-heading text-white mb-5 leading-tight-heading font-extrabold"
               >
-                Built{" "}
-                <span className="gradient-text">Different</span>
+                We Build Websites That{" "}
+                <span className="gradient-text">Generate Revenue</span>
               </h2>
               <p
                 className="text-body-lg text-white/70 max-w-2xl mx-auto leading-relaxed-body"
               >
-                Most web agencies deliver websites that look good but don't convert. We build
-                websites that look amazing AND get results for your business.
+                Most agencies build websites that look pretty but don't convert. We build websites that look amazing AND generate real results—more leads, more customers, more revenue.
               </p>
             </motion.div>
           </>

@@ -13,13 +13,13 @@ const plans = [
     price: "$100",
     priceRange: "– $300",
     tagline: "Perfect for getting started",
-    description: "Ideal for freelancers, students, or small businesses needing a simple online presence.",
+    description: "Ideal for freelancers and small businesses. Get online fast with a professional, mobile-optimized website.",
     features: [
       "Up to 3 pages (Home, About, Contact)",
-      "Mobile responsive design",
-      "Contact form (Email / WhatsApp)",
-      "Basic SEO setup",
-      "Fast loading speed",
+      "Mobile-optimized & fast-loading",
+      "WhatsApp + Email integration",
+      "Basic SEO for visibility",
+      "Conversion-focused design",
       "Delivered in 1–3 days",
       "1 round of revisions",
     ],
@@ -34,14 +34,14 @@ const plans = [
     price: "$300",
     priceRange: "– $800",
     tagline: "Most popular for businesses",
-    description: "Full business website with all the pages and features your customers expect.",
+    description: "The complete business solution. Get a professional website that generates leads and converts visitors into customers.",
     features: [
       "Up to 6 pages (Home, About, Services, Portfolio, Blog, Contact)",
-      "Custom design matching your brand",
-      "Mobile responsive + animations",
-      "Contact form + WhatsApp button",
-      "SEO optimisation",
-      "Google Analytics setup",
+      "Custom brand-aligned design",
+      "Mobile-first + smooth animations",
+      "Lead capture forms + WhatsApp CTA",
+      "Full SEO optimization",
+      "Google Analytics + tracking",
       "Delivered in 3–5 days",
       "3 rounds of revisions",
     ],
@@ -56,17 +56,17 @@ const plans = [
     price: "$800",
     priceRange: "+",
     tagline: "For ambitious businesses",
-    description: "Advanced websites with e-commerce, custom features, and premium design quality.",
+    description: "Build your digital powerhouse. E-commerce, custom features, and unlimited potential to scale your business online.",
     features: [
-      "Unlimited pages",
-      "E-commerce / online store",
-      "Custom animations & interactions",
-      "Advanced SEO package",
-      "CMS integration (manage content yourself)",
-      "Performance optimisation",
+      "Unlimited pages & custom features",
+      "E-commerce + payment integration",
+      "Advanced animations & interactions",
+      "Enterprise-level SEO",
+      "CMS for easy content updates",
+      "Performance & security optimized",
       "Delivered in 5–7 days",
       "Unlimited revisions",
-      "1 month free maintenance",
+      "1 month free support & maintenance",
     ],
     cta: "Get Started",
     popular: false,
@@ -108,19 +108,18 @@ export default function PricingSection() {
           <span
             className="inline-block text-sm font-semibold text-violet-400 uppercase tracking-widest mb-4"
           >
-            Simple Pricing
+            Transparent Pricing
           </span>
           <h2
             className="text-section-heading text-white mb-5 leading-tight-heading font-extrabold"
           >
-            Plans Built for{" "}
-            <span className="gradient-text">Growth</span>
+            Plans That Deliver{" "}
+            <span className="gradient-text">Real ROI</span>
           </h2>
           <p
             className="text-body-lg text-white/70 max-w-2xl mx-auto leading-relaxed-body"
           >
-            No hidden fees. No surprises. Just great websites at prices that make sense
-            for small businesses.
+            From startups to established businesses, we have a plan that fits your budget and goals. Every package includes conversion optimization and fast delivery.
           </p>
         </motion.div>
 

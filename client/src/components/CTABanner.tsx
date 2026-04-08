@@ -8,9 +8,9 @@ import { ArrowRight, Clock, CheckCircle } from "lucide-react";
 import { useLocation } from "wouter";
 
 const guarantees = [
-  { icon: Clock, text: "Delivered in 1–7 days" },
-  { icon: CheckCircle, text: "Free revisions included" },
-  { icon: CheckCircle, text: "Mobile responsive guaranteed" },
+  { icon: Clock, text: "Live in 3–7 days" },
+  { icon: CheckCircle, text: "Conversion-optimized" },
+  { icon: CheckCircle, text: "100% satisfaction guaranteed" },
 ];
 
 export default function CTABanner() {
@@ -36,13 +36,13 @@ export default function CTABanner() {
           <h2
             className="text-section-heading text-white mb-6 leading-tight-heading font-extrabold"
           >
-            Ready to Scale<br />
-            Your <span className="gradient-text">Sales?</span>
+            Stop Losing Customers<br />
+            to Your <span className="gradient-text">Competition</span>
           </h2>
           <p
             className="text-body-lg text-white/70 max-w-2xl mx-auto mb-8 leading-relaxed-body"
           >
-            Join 50+ happy clients. Affordable, fast, and professional. Get a free quote today — no obligation.
+            Your competitors already have websites. Get yours built in days, not months. Join 50+ businesses getting real results with Devify.
           </p>
 
           {/* Guarantees */}

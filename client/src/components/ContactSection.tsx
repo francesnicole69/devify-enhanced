@@ -138,7 +138,7 @@ export default function ContactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
           <span
             className="inline-block text-sm font-semibold text-blue-400 uppercase tracking-widest mb-4"
@@ -158,14 +158,14 @@ export default function ContactSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
           {/* Contact Methods */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-2 flex flex-col gap-4"
+            className="lg:col-span-2 flex flex-col gap-6"
           >
             {contactMethods.map((method) => (
               <a
@@ -173,7 +173,7 @@ export default function ContactSection() {
                 href={method.href}
                 target={method.href !== "#" ? "_blank" : undefined}
                 rel="noopener noreferrer"
-                className="glass-card rounded-2xl p-5 flex items-start gap-4 hover:bg-white/[0.06] transition-all duration-300 group"
+                className="glass-card rounded-premium p-6 flex items-start gap-4 hover:bg-white/[0.08] transition-all duration-300 group"
               >
                 <div
                   className={`w-11 h-11 rounded-xl bg-gradient-to-br ${method.gradient} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}
@@ -208,7 +208,7 @@ export default function ContactSection() {
               href="https://wa.me/6592716106?text=Hi%20Devify!%20I'm%20interested%20in%20a%20website%20for%20my%20business."
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-gradient flex items-center justify-center gap-2 py-3.5 rounded-xl text-sm font-semibold text-white mt-2"
+              className="btn-gradient flex items-center justify-center gap-2 py-4 rounded-premium text-sm font-semibold text-white mt-4"
             >
               <MessageCircle className="w-4 h-4" />
               <span>Chat on WhatsApp Now</span>
@@ -223,7 +223,7 @@ export default function ContactSection() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-3"
           >
-            <div className="glass-card rounded-2xl p-7">
+            <div className="glass-card rounded-premium p-8">
               {submitted ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}

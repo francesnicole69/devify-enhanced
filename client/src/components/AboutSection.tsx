@@ -50,7 +50,7 @@ export default function AboutSection() {
 
       <div className="container relative z-10">
         {/* Main content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-24">
           {/* Left: Text */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -112,7 +112,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-5"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
           >
             {values.map((value, i) => (
               <motion.div
@@ -121,7 +121,7 @@ export default function AboutSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="glass-card rounded-2xl p-5 hover:bg-white/[0.06] transition-all duration-300 group"
+                className="glass-card rounded-premium p-6 hover:bg-white/[0.08] transition-all duration-300 group"
               >
                 <div
                   className={`w-10 h-10 rounded-xl bg-gradient-to-br ${value.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}

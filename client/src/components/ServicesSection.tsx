@@ -77,7 +77,7 @@ export default function ServicesSection({ showHeader = true, showCards = true }:
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-center mb-16"
+              className="text-center mb-20"
             >
               <span
                 className="inline-block text-sm font-semibold text-blue-400 uppercase tracking-widest mb-4"
@@ -106,7 +106,7 @@ export default function ServicesSection({ showHeader = true, showCards = true }:
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto"
         >
           {services.map((service) => (
             <motion.div

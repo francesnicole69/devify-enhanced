@@ -103,7 +103,7 @@ export default function PricingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-20"
         >
           <span
             className="inline-block text-sm font-semibold text-violet-400 uppercase tracking-widest mb-4"
@@ -124,7 +124,7 @@ export default function PricingSection() {
         </motion.div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {plans.map((plan, i) => (
             <motion.div
               key={plan.name}
@@ -241,7 +241,7 @@ export default function PricingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="glass-card rounded-2xl p-6 md:p-8"
+          className="glass-card rounded-premium p-8 md:p-10"
         >
           <h3
             className="text-xl font-bold text-white mb-6 text-center"

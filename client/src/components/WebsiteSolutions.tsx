@@ -100,7 +100,7 @@ export default function WebsiteSolutions() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, type: "spring", stiffness: 100, damping: 15 }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
           <span
             className="inline-block text-sm font-semibold text-blue-400 uppercase tracking-widest mb-4"
@@ -129,7 +129,7 @@ export default function WebsiteSolutions() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"
         >
           {solutions.map((solution) => {
             const Icon = solution.icon;

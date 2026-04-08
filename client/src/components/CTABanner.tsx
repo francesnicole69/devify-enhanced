@@ -34,19 +34,19 @@ export default function CTABanner() {
           className="text-center"
         >
           <h2
-            className="text-section-heading text-white mb-6 leading-tight-heading font-extrabold"
+            className="text-section-heading text-white mb-8 leading-tight-heading font-extrabold"
           >
             Stop Losing Customers<br />
             to Your <span className="gradient-text">Competition</span>
           </h2>
           <p
-            className="text-body-lg text-white/70 max-w-2xl mx-auto mb-8 leading-relaxed-body"
+            className="text-body-lg text-white/70 max-w-2xl mx-auto mb-12 leading-relaxed-body"
           >
             Your competitors already have websites. Get yours built in days, not months. Join 50+ businesses getting real results with Devify.
           </p>
 
           {/* Guarantees */}
-          <div className="flex flex-wrap items-center justify-center gap-6 mb-10">
+          <div className="flex flex-wrap items-center justify-center gap-8 mb-12">
             {guarantees.map((g) => (
               <div key={g.text} className="flex items-center gap-2">
                 <g.icon className="w-4 h-4 text-blue-400" />
@@ -61,7 +61,7 @@ export default function CTABanner() {
 
           <button
             onClick={() => setLocation("/contact")}
-            className="btn-gradient inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-white shadow-2xl shadow-blue-500/20 hover:shadow-blue-500/40 transition-shadow duration-300"
+            className="btn-gradient inline-flex items-center gap-2 px-10 py-4 rounded-premium text-base font-bold text-white shadow-2xl shadow-blue-500/25 hover:shadow-blue-500/50 transition-all duration-300 btn-magnetic"
           >
             <span>Get My Free Quote Now</span>
             <ArrowRight className="w-5 h-5" />

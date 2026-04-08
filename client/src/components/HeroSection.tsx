@@ -95,12 +95,12 @@ export default function HeroSection() {
       )}
 
       {/* Content */}
-      <div className="relative z-10 container pt-32 pb-24">
+      <div className="relative z-10 container pt-40 pb-32">
         <motion.div
           variants={containerVariants}
           initial={shouldAnimate ? "hidden" : false}
           animate="visible"
-          className="max-w-4xl mx-auto text-center space-y-10"
+          className="max-w-4xl mx-auto text-center space-y-12"
         >
           {/* Headline */}
           <motion.h1
@@ -151,7 +151,7 @@ export default function HeroSection() {
           {/* Stats */}
           <motion.div
             variants={itemVariants}
-            className="grid grid-cols-3 gap-4 max-w-2xl mx-auto"
+            className="grid grid-cols-3 gap-6 max-w-2xl mx-auto pt-8"
           >
             {stats.map((stat, i) => (
               <motion.div

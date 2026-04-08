@@ -1,0 +1,245 @@
+/* ============================================================
+   DEVIFY WebsiteSolutions — Dark Tech Minimalism
+   Service showcase: 6 types of websites we build
+   Replaces the old portfolio "Work" section
+   ============================================================ */
+
+import { motion } from "framer-motion";
+import { ArrowRight, Globe, ShoppingCart, Image, Calendar, Zap, Rocket } from "lucide-react";
+import { useLocation } from "wouter";
+
+const solutions = [
+  {
+    id: 1,
+    title: "Business Websites",
+    description: "Professional multi-page websites for services, local businesses, and professional practices.",
+    benefit: "Get more customer inquiries",
+    icon: Globe,
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458144952/b3kTzaCTUqwBSmavZkBJUd/solution-business-websites-PQdTePNTLuZ73jUvwKxm6W.webp",
+    gradient: "from-blue-500 to-cyan-500",
+    tag: "Most Popular",
+  },
+  {
+    id: 2,
+    title: "E-Commerce Stores",
+    description: "Online stores with product catalogs, shopping carts, and payment integration to sell online.",
+    benefit: "Start selling in days",
+    icon: ShoppingCart,
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458144952/b3kTzaCTUqwBSmavZkBJUd/solution-ecommerce-3qpZbaBNz5SDU56T8JELuS.webp",
+    gradient: "from-amber-500 to-orange-500",
+    tag: "High ROI",
+  },
+  {
+    id: 3,
+    title: "Portfolio Websites",
+    description: "Showcase your work with stunning galleries, case studies, and client testimonials.",
+    benefit: "Land more clients",
+    icon: Image,
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458144952/b3kTzaCTUqwBSmavZkBJUd/solution-portfolio-KeHpn4UQg9VcW2XcaxUwVr.webp",
+    gradient: "from-pink-500 to-rose-500",
+    tag: "For Creatives",
+  },
+  {
+    id: 4,
+    title: "Booking & Service Websites",
+    description: "Calendar scheduling, service listings, and automated booking confirmations for service businesses.",
+    benefit: "Automate bookings",
+    icon: Calendar,
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458144952/b3kTzaCTUqwBSmavZkBJUd/solution-booking-MUgV6mwghZLtsK5ojXDayK.webp",
+    gradient: "from-purple-500 to-violet-500",
+    tag: "Save Time",
+  },
+  {
+    id: 5,
+    title: "SaaS & Web Apps",
+    description: "Custom web applications with dashboards, user management, and advanced features.",
+    benefit: "Build your product",
+    icon: Zap,
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458144952/b3kTzaCTUqwBSmavZkBJUd/solution-saas-TdUCTmeCEjXM9z4zREaqmY.webp",
+    gradient: "from-indigo-500 to-blue-500",
+    tag: "Scalable",
+  },
+  {
+    id: 6,
+    title: "Landing Pages",
+    description: "High-converting landing pages designed to capture leads and drive sales for campaigns.",
+    benefit: "Maximize conversions",
+    icon: Rocket,
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458144952/b3kTzaCTUqwBSmavZkBJUd/solution-landing-page-i59igfP6iRwiHv7ubUnhMx.webp",
+    gradient: "from-green-500 to-emerald-500",
+    tag: "Quick Launch",
+  },
+];
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.08 },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
+export default function WebsiteSolutions() {
+  const [, setLocation] = useLocation();
+
+  return (
+    <section id="work" className="py-24 md:py-32 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#080B14] via-[#0C1020] to-[#080B14] pointer-events-none" />
+
+      <div className="container relative z-10">
+        {/* Section Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, type: "spring", stiffness: 100, damping: 15 }}
+          className="text-center mb-16"
+        >
+          <span
+            className="inline-block text-sm font-semibold text-blue-400 uppercase tracking-widest mb-4"
+            style={{ fontFamily: 'Manrope, sans-serif' }}
+          >
+            Our Services
+          </span>
+          <h2
+            className="text-section-heading text-white mb-5 leading-tight-heading font-extrabold"
+            style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800 }}
+          >
+            Website Solutions<br />
+            for <span className="gradient-text">Every Business</span>
+          </h2>
+          <p
+            className="text-body-lg text-white/50 max-w-2xl mx-auto leading-relaxed-body"
+            style={{ fontFamily: 'Manrope, sans-serif' }}
+          >
+            We design and build modern websites tailored to different business needs. Choose what fits your goals.
+          </p>
+        </motion.div>
+
+        {/* Solutions Grid */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
+        >
+          {solutions.map((solution) => {
+            const Icon = solution.icon;
+            return (
+              <motion.div
+                key={solution.id}
+                variants={itemVariants}
+                className="group relative overflow-hidden rounded-2xl glass-card hover:bg-white/[0.08] transition-all duration-300"
+              >
+                {/* Background image */}
+                <div className="absolute inset-0 overflow-hidden">
+                  <img
+                    src={solution.image}
+                    alt={solution.title}
+                    className="w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#080B14] via-[#080B14]/60 to-transparent" />
+                </div>
+
+                {/* Content */}
+                <div className="relative p-6 h-full flex flex-col justify-between min-h-[420px]">
+                  {/* Top section */}
+                  <div>
+                    {/* Tag */}
+                    {solution.tag && (
+                      <div className="inline-block mb-4">
+                        <span
+                          className={`text-xs font-bold px-3 py-1 rounded-full bg-gradient-to-r ${solution.gradient} text-white`}
+                          style={{ fontFamily: 'Manrope, sans-serif' }}
+                        >
+                          {solution.tag}
+                        </span>
+                      </div>
+                    )}
+
+                    {/* Icon */}
+                    <div
+                      className={`w-12 h-12 rounded-xl bg-gradient-to-br ${solution.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
+                    >
+                      <Icon className="w-6 h-6 text-white" />
+                    </div>
+
+                    {/* Title */}
+                    <h3
+                      className="text-xl font-bold text-white mb-2"
+                      style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}
+                    >
+                      {solution.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p
+                      className="text-sm text-white/60 leading-relaxed mb-4"
+                      style={{ fontFamily: 'Manrope, sans-serif' }}
+                    >
+                      {solution.description}
+                    </p>
+                  </div>
+
+                  {/* Bottom section */}
+                  <div>
+                    {/* Benefit */}
+                    <div className="flex items-center gap-2 mb-4 pb-4 border-t border-white/10">
+                      <div className="w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-violet-500" />
+                      <span
+                        className="text-sm font-semibold text-white/80"
+                        style={{ fontFamily: 'Manrope, sans-serif' }}
+                      >
+                        {solution.benefit}
+                      </span>
+                    </div>
+
+                    {/* CTA */}
+                    <button
+                      onClick={() => setLocation("/contact")}
+                      className="flex items-center gap-2 text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-200 group/btn"
+                    >
+                      <span>Get Started</span>
+                      <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200" />
+                    </button>
+                  </div>
+                </div>
+              </motion.div>
+            );
+          })}
+        </motion.div>
+
+        {/* Bottom CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="text-center"
+        >
+          <p
+            className="text-white/50 mb-6"
+            style={{ fontFamily: 'Manrope, sans-serif' }}
+          >
+            Not sure which solution fits your needs?
+          </p>
+          <button
+            onClick={() => setLocation("/contact")}
+            className="btn-gradient inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-white shadow-2xl shadow-blue-500/20 hover:shadow-blue-500/40 transition-shadow duration-300"
+          >
+            <span>Get a Free Consultation</span>
+            <ArrowRight className="w-5 h-5" />
+          </button>
+        </motion.div>
+      </div>
+    </section>
+  );
+}

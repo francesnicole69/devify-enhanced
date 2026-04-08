@@ -1,0 +1,12 @@
+{
+  "buildCommand": "vite build",
+  "outputDirectory": "dist/public",
+  "framework": "vite",
+  "regions": ["sin1"],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

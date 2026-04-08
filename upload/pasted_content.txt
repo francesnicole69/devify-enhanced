@@ -1,0 +1,173 @@
+1. 📌 Product Overview
+
+Devify is a web development service website designed to help small businesses quickly establish a strong online presence through modern, high-converting websites.
+
+The platform acts as:
+
+a portfolio
+a sales funnel
+a lead generation tool
+
+👉 Goal: convert visitors into paying clients
+
+2. 🎯 Objectives
+Generate qualified leads for website services
+Clearly communicate Devify’s value proposition
+Build trust and credibility
+Convert visitors into clients via WhatsApp/contact
+Showcase Devify as a modern, premium agency
+3. 👥 Target Users
+Small business owners (aircon, electricians, salons, etc.)
+Freelancers needing portfolios
+Startups needing landing pages
+Local Singapore businesses without strong online presence
+4. 💡 Problem Statement
+
+Many businesses:
+
+do not have a website
+have outdated or poor-performing websites
+lose customers due to weak online presence
+
+👉 Devify solves this by:
+
+providing modern, conversion-focused websites
+making the process fast, simple, and affordable
+5. 🚀 Core Value Proposition
+
+👉 “We build websites that don’t just look good — they bring you customers.”
+
+Key selling points:
+
+Fast delivery (3–7 days)
+Mobile-optimized
+Clean, modern design
+Conversion-focused
+Affordable pricing
+6. 🧱 Core Features (MVP)
+🏠 Home Page
+Sections:
+Hero (headline + CTA)
+Why Devify (value proposition)
+Website solutions (types of websites)
+Process overview
+Testimonials (even demo at first)
+CTA section
+⚙️ Services Page
+Process: “From Brief to Live”
+Clear explanation of workflow:
+Consultation
+Design
+Development
+Launch
+🧩 Work Page (Modified)
+
+Instead of portfolio:
+👉 Website Solutions Section
+
+Categories:
+
+Business Websites
+E-commerce Stores
+Portfolio Websites
+Booking Systems
+SaaS / Web Apps
+Landing Pages
+💰 Pricing Page
+3 tiers:
+Basic
+Standard
+Premium
+
+Include:
+
+features
+pricing
+highlighted “most popular”
+📞 Contact Page
+WhatsApp CTA (primary)
+Email (secondary)
+Contact form
+“Free consultation” messaging
+7. 🎨 Design Requirements
+🌑 Style
+Dark theme
+Modern, minimal
+Premium agency feel
+✨ UI Elements
+Glow effects (subtle)
+Rounded cards
+Smooth animations
+Clean typography
+Consistent spacing
+🎯 UX Principles
+Clear hierarchy
+Fast loading
+Mobile-first design
+Minimal friction
+8. ⚙️ Tech Stack
+
+Frontend:
+
+React or Next.js
+
+Styling:
+
+Tailwind CSS
+
+Deployment:
+
+Vercel
+
+Version Control:
+
+GitHub
+9. 🧑‍💻 User Flow
+User lands on homepage
+Sees strong headline (value)
+Scrolls → understands services
+Views website types / pricing
+Builds trust (testimonials)
+Clicks CTA
+Contacts via WhatsApp
+10. 📈 Success Metrics
+Conversion rate (visitors → leads)
+Number of enquiries
+WhatsApp clicks
+Time on page
+Bounce rate
+11. ⚠️ Risks & Challenges
+Lack of portfolio initially
+Weak copy → low conversion
+Overdesign → slow performance
+Too many animations → lag
+12. 🚀 Future Enhancements
+Client dashboard (optional later)
+Booking system integration
+SEO optimisation services
+Subscription/maintenance plans
+Scaling into full agency
+13. 🧠 Key Strategy (VERY IMPORTANT)
+
+Devify is NOT:
+❌ just a website
+
+Devify is:
+👉 a sales machine
+
+🔥 Core Conversion Strategy
+
+Each section must answer:
+
+👉 “Why should I choose Devify?”
+
+💡 Messaging Focus
+Results > design
+Speed > complexity
+Simplicity > features
+🧠 Final Advice
+
+If you follow this PRD properly:
+
+👉 You won’t just have a website
+👉 You’ll have something that can actually make money

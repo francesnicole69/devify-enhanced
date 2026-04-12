@@ -65,7 +65,7 @@ export default function Navbar() {
             )}
             
             {/* Logo container */}
-                 className="relative z-10 p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 group-hover:border-blue-500/50 transition-all duration-300 group-hover:from-blue-500/10 group-hover:to-violet-600/10">
+            <div className="relative z-10 p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 group-hover:border-blue-500/50 transition-all duration-300 group-hover:from-blue-500/10 group-hover:to-violet-600/10">
               <img
                 src="/images/ChatGPT Image Mar 21, 2026, 06_27_54 PM.png"
                 alt="Devify Logo"

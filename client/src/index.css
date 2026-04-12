@@ -125,7 +125,7 @@
   
   /* H1 — Hero & Main Headings */
   h1 {
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 800;
     line-height: 1.2;
     letter-spacing: -0.02em;
@@ -133,31 +133,31 @@
   
   @media (min-width: 640px) {
     h1 {
-      font-size: 42px;
+      font-size: 40px;
     }
   }
   
   @media (min-width: 768px) {
     h1 {
-      font-size: 50px;
+      font-size: 48px;
     }
   }
   
   @media (min-width: 1024px) {
     h1 {
-      font-size: 58px;
+      font-size: 56px;
     }
   }
   
   @media (min-width: 1280px) {
     h1 {
-      font-size: 66px;
+      font-size: 64px;
     }
   }
   
   /* H2 — Section Headings */
   h2 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: -0.01em;
@@ -165,25 +165,25 @@
   
   @media (min-width: 640px) {
     h2 {
-      font-size: 34px;
+      font-size: 32px;
     }
   }
   
   @media (min-width: 768px) {
     h2 {
-      font-size: 42px;
+      font-size: 40px;
     }
   }
   
   @media (min-width: 1024px) {
     h2 {
-      font-size: 46px;
+      font-size: 44px;
     }
   }
   
   /* H3 — Subsection Headings */
   h3 {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 600;
     line-height: 1.35;
     letter-spacing: -0.005em;
@@ -191,19 +191,19 @@
   
   @media (min-width: 640px) {
     h3 {
-      font-size: 29px;
+      font-size: 24px;
     }
   }
   
   @media (min-width: 768px) {
     h3 {
-      font-size: 30px;
+      font-size: 28px;
     }
   }
   
   @media (min-width: 1024px) {
     h3 {
-      font-size: 32px;
+      font-size: 30px;
     }
   }
   
@@ -249,7 +249,7 @@
 @layer components {
   /* Responsive Typography Utilities */
   .text-hero {
-    font-size: 53px;
+    font-size: 36px;
     font-weight: 800;
     line-height: 1.2;
     letter-spacing: -0.02em;
@@ -257,30 +257,30 @@
   
   @media (min-width: 640px) {
     .text-hero {
-      font-size: 55px;
+      font-size: 44px;
     }
   }
   
   @media (min-width: 768px) {
     .text-hero {
-      font-size: 57px;
+      font-size: 52px;
     }
   }
   
   @media (min-width: 1024px) {
     .text-hero {
-      font-size: 61px;
+      font-size: 58px;
     }
   }
   
   @media (min-width: 1280px) {
     .text-hero {
-      font-size: 61px;
+      font-size: 64px;
     }
   }
 
   .text-section-heading {
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: -0.01em;
@@ -288,19 +288,19 @@
   
   @media (min-width: 640px) {
     .text-section-heading {
-      font-size: 36px;
+      font-size: 32px;
     }
   }
   
   @media (min-width: 768px) {
     .text-section-heading {
-      font-size: 37px;
+      font-size: 36px;
     }
   }
   
   @media (min-width: 1024px) {
     .text-section-heading {
-      font-size: 39px;
+      font-size: 40px;
     }
   }
 
@@ -409,8 +409,8 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
     }
   }
 
@@ -520,8 +520,15 @@
 
   /* Premium spacing utilities */
   .space-premium {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (min-width: 640px) {
+    .space-premium {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
   }
 
   @media (min-width: 1024px) {

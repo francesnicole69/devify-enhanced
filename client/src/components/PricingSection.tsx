@@ -103,28 +103,28 @@ export default function PricingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          className="text-center mb-12 sm:mb-16 md:mb-20"
         >
           <span
-            className="inline-block text-sm font-semibold text-violet-400 uppercase tracking-widest mb-4"
+            className="inline-block text-xs sm:text-sm font-semibold text-violet-400 uppercase tracking-widest mb-3 sm:mb-4"
           >
             Transparent Pricing
           </span>
           <h2
-            className="text-section-heading text-white mb-5 leading-tight-heading font-extrabold"
+            className="text-section-heading text-white mb-4 sm:mb-5 leading-tight-heading font-extrabold"
           >
             Plans That Deliver{" "}
             <span className="gradient-text">Real ROI</span>
           </h2>
           <p
-            className="text-body-lg text-white/70 max-w-2xl mx-auto leading-relaxed-body"
+            className="text-sm sm:text-base md:text-lg text-white/70 max-w-2xl mx-auto leading-relaxed-body"
           >
             From startups to established businesses, we have a plan that fits your budget and goals. Every package includes conversion optimization and fast delivery.
           </p>
         </motion.div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16 md:mb-20">
           {plans.map((plan, i) => (
             <motion.div
               key={plan.name}
@@ -241,10 +241,10 @@ export default function PricingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="glass-card rounded-premium p-8 md:p-10"
+          className="glass-card rounded-premium p-6 sm:p-8 md:p-10"
         >
           <h3
-            className="text-xl font-bold text-white mb-6 text-center"
+            className="text-lg sm:text-xl font-bold text-white mb-4 sm:mb-6 text-center"
             style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}
           >
             Optional Add-Ons

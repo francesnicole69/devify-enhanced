@@ -138,34 +138,34 @@ export default function ContactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          className="text-center mb-12 sm:mb-16 md:mb-20"
         >
           <span
-            className="inline-block text-sm font-semibold text-blue-400 uppercase tracking-widest mb-4"
+            className="inline-block text-xs sm:text-sm font-semibold text-blue-400 uppercase tracking-widest mb-3 sm:mb-4"
           >
             Get Started Today
           </span>
           <h2
-            className="text-section-heading text-white mb-5 leading-tight-heading font-extrabold"
+            className="text-section-heading text-white mb-4 sm:mb-5 leading-tight-heading font-extrabold"
           >
             Ready to Get Your{" "}
             <span className="gradient-text">Website Live?</span>
           </h2>
           <p
-            className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed"
+            className="text-sm sm:text-base md:text-lg text-white/70 max-w-2xl mx-auto leading-relaxed"
           >
             Tell us about your business and get a free consultation within 24 hours. No obligation. No pressure. Just honest advice on how we can help you get more customers.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 sm:gap-10 md:gap-12">
           {/* Contact Methods */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-2 flex flex-col gap-6"
+            className="lg:col-span-2 flex flex-col gap-4 sm:gap-5 md:gap-6"
           >
             {contactMethods.map((method) => (
               <a
@@ -173,7 +173,7 @@ export default function ContactSection() {
                 href={method.href}
                 target={method.href !== "#" ? "_blank" : undefined}
                 rel="noopener noreferrer"
-                className="glass-card rounded-premium p-6 flex items-start gap-4 hover:bg-white/[0.08] transition-all duration-300 group"
+                className="glass-card rounded-premium p-4 sm:p-5 md:p-6 flex items-start gap-3 sm:gap-4 hover:bg-white/[0.08] transition-all duration-300 group"
               >
                 <div
                   className={`w-11 h-11 rounded-xl bg-gradient-to-br ${method.gradient} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}
@@ -223,7 +223,7 @@ export default function ContactSection() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-3"
           >
-            <div className="glass-card rounded-premium p-8">
+            <div className="glass-card rounded-premium p-6 sm:p-8">
               {submitted ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}

@@ -46,7 +46,7 @@ export default function TestimonialsSection() {
   }, []);
 
   return (
-    <section className="py-24 md:py-32 relative overflow-hidden">
+    <section className="py-16 sm:py-24 md:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-[#080B14] via-[#0C1020] to-[#080B14] pointer-events-none" />
 
       <div className="container relative z-10">
@@ -56,21 +56,21 @@ export default function TestimonialsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-12 md:mb-16"
         >
           <span
-            className="inline-block text-sm font-semibold text-violet-400 uppercase tracking-widest mb-4"
+            className="inline-block text-xs sm:text-sm font-semibold text-violet-400 uppercase tracking-widest mb-3 sm:mb-4"
           >
             Real Results
           </span>
           <h2
-            className="text-section-heading text-white mb-5 leading-tight-heading font-extrabold"
+            className="text-section-heading text-white mb-4 sm:mb-5 leading-tight-heading font-extrabold"
           >
             Businesses Getting{" "}
             <span className="gradient-text">Real Revenue</span>
           </h2>
           <p
-            className="text-body-lg text-white/70 max-w-2xl mx-auto leading-relaxed-body"
+            className="text-sm sm:text-base md:text-lg text-white/70 max-w-2xl mx-auto leading-relaxed-body"
           >
             See how real Singapore businesses are getting more customers, more bookings, and more revenue with their Devify websites.
           </p>
@@ -92,20 +92,20 @@ export default function TestimonialsSection() {
                     whileInView={isMobile ? undefined : { opacity: 1, y: 0 }}
                     transition={isMobile ? { duration: 0 } : { delay: idx * 0.06, duration: 0.45 }}
                     viewport={isMobile ? undefined : { once: true, margin: "0px 0px -90px 0px" }}
-                    className="glass-card group w-[260px] sm:w-[300px] lg:w-[340px] flex-shrink-0 rounded-2xl p-5 sm:p-6 hover:border-blue-500/30 transition-colors duration-300 cursor-default"
+                    className="glass-card group w-[260px] sm:w-[300px] md:w-[340px] flex-shrink-0 rounded-premium p-4 sm:p-5 md:p-6 hover:border-blue-500/30 transition-colors duration-300 cursor-default"
                   >
                     {/* Decorative quote mark */}
-                    <div className="text-3xl text-blue-500/20 mb-2 transition-colors duration-300 group-hover:text-blue-500/40">
+                    <div className="text-2xl sm:text-3xl text-blue-500/20 mb-1 sm:mb-2 transition-colors duration-300 group-hover:text-blue-500/40">
                       "
                     </div>
                     <p
-                      className="text-sm sm:text-base text-white/65 leading-relaxed mb-4 transition-colors duration-300 group-hover:text-white/80"
+                      className="text-xs sm:text-sm md:text-base text-white/65 leading-relaxed mb-3 sm:mb-4 transition-colors duration-300 group-hover:text-white/80"
                       style={{ fontFamily: 'Manrope, sans-serif' }}
                     >
                       {testimonial.content}
                     </p>
                     <p
-                      className="text-sm font-semibold text-white transition-colors duration-300 group-hover:text-blue-300"
+                      className="text-xs sm:text-sm font-semibold text-white transition-colors duration-300 group-hover:text-blue-300"
                       style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}
                     >
                       {testimonial.name}

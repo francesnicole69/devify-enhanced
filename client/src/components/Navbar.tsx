@@ -51,7 +51,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
           {/* Logo */}
           <button
             onClick={() => handleNavClick("/")}
@@ -65,11 +65,11 @@ export default function Navbar() {
             )}
             
             {/* Logo container */}
-            <div className="relative z-10 p-2 rounded-xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 group-hover:border-blue-500/50 transition-all duration-300 group-hover:from-blue-500/10 group-hover:to-violet-600/10">
+                 className="relative z-10 p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 group-hover:border-blue-500/50 transition-all duration-300 group-hover:from-blue-500/10 group-hover:to-violet-600/10">
               <img
                 src="/images/ChatGPT Image Mar 21, 2026, 06_27_54 PM.png"
                 alt="Devify Logo"
-                className="h-10 w-auto transition-all duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_20px_rgba(59,130,246,0.4)]"
+                className="h-8 sm:h-10 w-auto transition-all duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_20px_rgba(59,130,246,0.4)]"
               />
             </div>
             
@@ -130,7 +130,7 @@ export default function Navbar() {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-white/70 hover:text-white transition-colors"
+            className="md:hidden p-2 text-white/70 hover:text-white transition-colors active:scale-95"
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -147,14 +147,14 @@ export default function Navbar() {
             transition={{ duration: 0.2, ease: "easeOut" }}
             className="md:hidden bg-[#0D1120]/95 backdrop-blur-xl border-t border-white/5"
           >
-            <div className="container py-6 flex flex-col gap-2">
+            <div className="container py-4 sm:py-6 flex flex-col gap-1.5 sm:gap-2">
               {navLinks.map((link, i) => {
                 const isActive = location === link.href;
                 return (
                   <button
                     key={link.href}
                     onClick={() => handleNavClick(link.href)}
-                    className={`text-left text-base font-medium px-4 py-2.5 rounded-lg transition-all duration-300 ${
+                    className={`text-left text-sm sm:text-base font-medium px-4 py-2.5 rounded-lg transition-all duration-300 active:scale-95 ${
                       isActive
                         ? "text-blue-400 bg-blue-500/10"
                         : "text-white/70 hover:text-white hover:bg-white/5"
@@ -167,7 +167,7 @@ export default function Navbar() {
               })}
               <button
                 onClick={() => handleNavClick("/contact")}
-                className="btn-gradient mt-4 px-5 py-3 rounded-lg text-sm font-semibold text-white text-center"
+                className="btn-gradient mt-3 sm:mt-4 px-5 py-3 rounded-premium text-sm font-semibold text-white text-center"
               >
                 <span>Start Your Website</span>
               </button>

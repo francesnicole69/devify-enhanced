@@ -100,7 +100,7 @@ export default function HeroSection() {
           variants={containerVariants}
           initial={shouldAnimate ? "hidden" : false}
           animate="visible"
-          className="max-w-4xl mx-auto text-center space-y-12"
+          className="max-w-4xl mx-auto text-center space-y-8 sm:space-y-10 md:space-y-12"
         >
           {/* Headline */}
           <motion.h1
@@ -114,7 +114,7 @@ export default function HeroSection() {
           {/* Subheadline */}
           <motion.p
             variants={itemVariants}
-            className="text-body-lg text-white/70 max-w-3xl mx-auto leading-relaxed-body font-normal"
+            className="text-sm sm:text-base md:text-lg text-white/70 max-w-3xl mx-auto leading-relaxed-body font-normal"
           >
             Professional websites built in 3–7 days. Mobile-optimized. Conversion-focused. Affordable. We don't just build websites—we build revenue machines for your business.
           </motion.p>
@@ -122,27 +122,27 @@ export default function HeroSection() {
           {/* CTA Buttons */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-2 sm:pt-4"
           >
             <motion.button
               onClick={() => setLocation("/contact")}
               whileHover={isMobile ? {} : { scale: 1.05, boxShadow: "0 25px 50px -12px rgba(59, 130, 246, 0.5)" }}
               whileTap={{ scale: 0.95 }}
-              className="btn-gradient flex items-center gap-2 px-8 py-4 rounded-xl text-base font-semibold text-white shadow-lg shadow-blue-500/30 transition-all duration-300 w-full sm:w-auto justify-center group"
+              className="btn-gradient flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-premium text-sm sm:text-base font-semibold text-white shadow-lg shadow-blue-500/30 transition-all duration-300 w-full sm:w-auto group"
             >
               <span>Get Your Website in 3 Days</span>
               <motion.div
                 animate={isMobile ? {} : { x: [0, 4, 0] }}
                 transition={isMobile ? {} : { repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
               >
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-3.5 sm:w-4 h-3.5 sm:h-4 group-hover:translate-x-1 transition-transform" />
               </motion.div>
             </motion.button>
             <motion.button
               onClick={scrollToWork}
               whileHover={isMobile ? {} : { scale: 1.05, borderColor: "rgba(59, 130, 246, 0.5)", backgroundColor: "rgba(255, 255, 255, 0.15)" }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 px-8 py-4 rounded-xl text-base font-semibold text-white/80 border border-white/20 hover:border-blue-500/50 hover:bg-white/8 transition-all duration-300 w-full sm:w-auto justify-center group"
+              className="flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-premium text-sm sm:text-base font-semibold text-white/80 border border-white/20 hover:border-blue-500/50 hover:bg-white/8 transition-all duration-300 w-full sm:w-auto group"
             >
               <span>See Our Work</span>
             </motion.button>
@@ -151,7 +151,7 @@ export default function HeroSection() {
           {/* Stats */}
           <motion.div
             variants={itemVariants}
-            className="grid grid-cols-3 gap-6 max-w-2xl mx-auto pt-8"
+            className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 max-w-2xl mx-auto pt-4 sm:pt-6 md:pt-8"
           >
             {stats.map((stat, i) => (
               <motion.div
@@ -167,12 +167,12 @@ export default function HeroSection() {
                   <stat.icon className="w-5 h-5 text-blue-400 mx-auto mb-2 group-hover:text-blue-300 transition-colors" />
                 </motion.div>
                 <div
-                  className="text-xl sm:text-xl md:text-2xl font-extrabold gradient-text mb-2 leading-tight"
+                  className="text-lg sm:text-xl md:text-2xl font-extrabold gradient-text mb-1 sm:mb-2 leading-tight"
                   style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800 }}
                 >
                   {stat.value}
                 </div>
-                <div className="text-xs sm:text-sm md:text-sm text-white/50 group-hover:text-white/70 transition-colors leading-snug">
+                <div className="text-xs text-white/50 group-hover:text-white/70 transition-colors leading-snug">
                   {stat.label}
                 </div>
               </motion.div>

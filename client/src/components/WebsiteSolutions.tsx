@@ -11,58 +11,58 @@ import { useLocation } from "wouter";
 const solutions = [
   {
     id: 1,
-    title: "Restaurant Websites",
-    description: "Elegant dining experiences with menus, reservations, and online ordering. Built for fine dining and casual restaurants.",
-    benefit: "Get more reservations",
+    title: "Business Websites",
+    description: "Professional multi-page websites for services, local businesses, and professional practices.",
+    benefit: "Get more customer inquiries",
     icon: Globe,
-    image: "/images/restaurant-mockup.png",
-    gradient: "from-amber-500 to-orange-500",
-    tag: "Premium Design",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458144952/b3kTzaCTUqwBSmavZkBJUd/solution-business-websites-PQdTePNTLuZ73jUvwKxm6W.webp",
+    gradient: "from-blue-500 to-cyan-500",
+    tag: "Most Popular",
   },
   {
     id: 2,
-    title: "Fitness Studio Websites",
-    description: "High-energy sites with class schedules, trainer profiles, and membership sign-ups. Perfect for gyms and fitness studios.",
-    benefit: "Boost memberships",
-    icon: ShoppingCart,
-    image: "/images/gym-mockup.png",
-    gradient: "from-red-500 to-pink-500",
-    tag: "High Conversion",
-  },
-  {
-    id: 3,
-    title: "Beauty & Salon Websites",
-    description: "Luxurious portfolios with service galleries, booking systems, and Instagram integration for salons and beauty studios.",
-    benefit: "Book more clients",
-    icon: Image,
-    image: "/images/hair-studio-mockup.png",
-    gradient: "from-rose-500 to-pink-500",
-    tag: "Elegant & Modern",
-  },
-  {
-    id: 4,
     title: "E-Commerce Stores",
-    description: "Online stores with product catalogs, shopping carts, and payment integration to sell online 24/7.",
-    benefit: "Start selling today",
-    icon: Calendar,
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458144952/b3kTzaCTUqwBSmavZkBJUd/solution-booking-MUgV6mwghZLtsK5ojXDayK.webp",
-    gradient: "from-purple-500 to-violet-500",
+    description: "Online stores with product catalogs, shopping carts, and payment integration to sell online.",
+    benefit: "Start selling in days",
+    icon: ShoppingCart,
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458144952/b3kTzaCTUqwBSmavZkBJUd/solution-ecommerce-3qpZbaBNz5SDU56T8JELuS.webp",
+    gradient: "from-amber-500 to-orange-500",
     tag: "High ROI",
   },
   {
+    id: 3,
+    title: "Portfolio Websites",
+    description: "Showcase your work with stunning galleries, case studies, and client testimonials.",
+    benefit: "Land more clients",
+    icon: Image,
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458144952/b3kTzaCTUqwBSmavZkBJUd/solution-portfolio-KeHpn4UQg9VcW2XcaxUwVr.webp",
+    gradient: "from-pink-500 to-rose-500",
+    tag: "For Creatives",
+  },
+  {
+    id: 4,
+    title: "Booking & Service Websites",
+    description: "Calendar scheduling, service listings, and automated booking confirmations for service businesses.",
+    benefit: "Automate bookings",
+    icon: Calendar,
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458144952/b3kTzaCTUqwBSmavZkBJUd/solution-booking-MUgV6mwghZLtsK5ojXDayK.webp",
+    gradient: "from-purple-500 to-violet-500",
+    tag: "Save Time",
+  },
+  {
     id: 5,
-    title: "Portfolio & Creative Sites",
-    description: "Stunning galleries and case studies to showcase your work. Perfect for designers, photographers, and creatives.",
-    benefit: "Land premium clients",
+    title: "SaaS & Web Apps",
+    description: "Custom web applications with dashboards, user management, and advanced features.",
+    benefit: "Build your product",
     icon: Zap,
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458144952/b3kTzaCTUqwBSmavZkBJUd/solution-saas-TdUCTmeCEjXM9z4zREaqmY.webp",
     gradient: "from-indigo-500 to-blue-500",
-    tag: "Showcase Work",
+    tag: "Scalable",
   },
   {
     id: 6,
-    title: "High-Converting Landing Pages",
-    description: "Optimized landing pages designed to capture leads and drive sales for your campaigns and promotions.",
+    title: "Landing Pages",
+    description: "High-converting landing pages designed to capture leads and drive sales for campaigns.",
     benefit: "Maximize conversions",
     icon: Rocket,
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458144952/b3kTzaCTUqwBSmavZkBJUd/solution-landing-page-i59igfP6iRwiHv7ubUnhMx.webp",
@@ -100,26 +100,26 @@ export default function WebsiteSolutions() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, type: "spring", stiffness: 100, damping: 15 }}
-          className="text-center mb-20"
+          className="text-center mb-12 sm:mb-16 md:mb-20"
         >
           <span
-            className="inline-block text-sm font-semibold text-blue-400 uppercase tracking-widest mb-4"
+            className="inline-block text-xs sm:text-sm font-semibold text-blue-400 uppercase tracking-widest mb-3 sm:mb-4"
             style={{ fontFamily: 'Manrope, sans-serif' }}
           >
-            Our Solutions
+            Our Services
           </span>
           <h2
-            className="text-section-heading text-white mb-5 leading-tight-heading font-extrabold"
+            className="text-section-heading text-white mb-4 sm:mb-5 leading-tight-heading font-extrabold"
             style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800 }}
           >
-            Conversion-Focused<br />
-            <span className="gradient-text">Website Engineering</span>
+            Website Solutions<br />
+            for <span className="gradient-text">Every Business</span>
           </h2>
           <p
-            className="text-body-lg text-white/50 max-w-2xl mx-auto leading-relaxed-body"
+            className="text-sm sm:text-base md:text-lg text-white/50 max-w-2xl mx-auto leading-relaxed-body"
             style={{ fontFamily: 'Manrope, sans-serif' }}
           >
-            We don't just build websites. We engineer digital experiences that drive growth, capture leads, and turn visitors into loyal customers.
+            We design and build modern websites tailored to different business needs. Choose what fits your goals.
           </p>
         </motion.div>
 
@@ -129,7 +129,7 @@ export default function WebsiteSolutions() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16"
         >
           {solutions.map((solution) => {
             const Icon = solution.icon;
@@ -139,7 +139,7 @@ export default function WebsiteSolutions() {
                 variants={itemVariants}
                 className="group relative overflow-hidden rounded-premium glass-card hover:bg-white/[0.08] transition-all duration-300 flex flex-col"
               >
-                {/* Background image - Mobile optimized */}
+                {/* Background image */}
                 <div className="absolute inset-0 overflow-hidden">
                   <img
                     src={solution.image}
@@ -147,7 +147,7 @@ export default function WebsiteSolutions() {
                     loading="lazy"
                     className="w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#080B14] via-[#080B14]/70 to-[#080B14]/40" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#080B14] via-[#080B14]/60 to-transparent" />
                 </div>
 
                 {/* Content */}
@@ -234,7 +234,7 @@ export default function WebsiteSolutions() {
           </p>
           <button
             onClick={() => setLocation("/contact")}
-            className="btn-gradient inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-premium text-sm sm:text-base font-bold text-white shadow-2xl shadow-blue-500/20 hover:shadow-blue-500/40 transition-shadow duration-300 btn-magnetic"
+            className="btn-gradient inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-premium text-sm sm:text-base font-bold text-white shadow-2xl shadow-blue-500/20 hover:shadow-blue-500/40 transition-shadow duration-300"
           >
             <span>Get a Free Consultation</span>
             <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5" />

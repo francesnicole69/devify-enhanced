@@ -26,7 +26,11 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { type: "spring", stiffness: 100, damping: 20, mass: 1 }
+  },
 };
 
 export default function HeroSection() {
@@ -106,6 +110,8 @@ export default function HeroSection() {
           <motion.h1
             variants={itemVariants}
             className="text-hero text-white font-extrabold"
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
           >
             Build a Website<br />
             <span className="gradient-text">That Sells</span>
@@ -128,21 +134,22 @@ export default function HeroSection() {
               onClick={() => setLocation("/contact")}
               whileHover={isMobile ? {} : { scale: 1.05, boxShadow: "0 25px 50px -12px rgba(59, 130, 246, 0.5)" }}
               whileTap={{ scale: 0.95 }}
-              className="btn-gradient flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-premium text-sm sm:text-base font-semibold text-white shadow-lg shadow-blue-500/30 transition-all duration-300 w-full sm:w-auto group"
+              className="btn-gradient flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-premium text-sm sm:text-base font-semibold text-white shadow-lg shadow-blue-500/30 transition-all duration-300 w-full sm:w-auto group active:scale-95"
             >
               <span>Get Your Website in 3 Days</span>
               <motion.div
                 animate={isMobile ? {} : { x: [0, 4, 0] }}
                 transition={isMobile ? {} : { repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
+                className="group-hover:translate-x-1 transition-transform"
               >
-                <ArrowRight className="w-3.5 sm:w-4 h-3.5 sm:h-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
               </motion.div>
             </motion.button>
             <motion.button
               onClick={scrollToWork}
               whileHover={isMobile ? {} : { scale: 1.05, borderColor: "rgba(59, 130, 246, 0.5)", backgroundColor: "rgba(255, 255, 255, 0.15)" }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-premium text-sm sm:text-base font-semibold text-white/80 border border-white/20 hover:border-blue-500/50 hover:bg-white/8 transition-all duration-300 w-full sm:w-auto group"
+              className="flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-premium text-sm sm:text-base font-semibold text-white/80 border border-white/20 hover:border-blue-500/50 hover:bg-white/8 transition-all duration-300 w-full sm:w-auto group active:scale-95"
             >
               <span>See Our Work</span>
             </motion.button>
@@ -157,8 +164,9 @@ export default function HeroSection() {
               <motion.div
                 key={stat.label}
                 whileHover={isMobile ? {} : { scale: 1.08, y: -8 }}
+                whileTap={isMobile ? { scale: 0.98 } : {}}
                 transition={{ type: "spring", stiffness: 300, damping: 25, mass: 1 }}
-                className="glass-card rounded-2xl p-4 md:p-6 text-center hover:border-blue-500/50 transition-all duration-300 cursor-default group"
+                className="glass-card rounded-2xl p-4 md:p-6 text-center hover:border-blue-500/50 transition-all duration-300 cursor-default group active:scale-95"
               >
                 <motion.div
                   animate={isMobile ? {} : { rotate: [0, 6, -6, 0] }}

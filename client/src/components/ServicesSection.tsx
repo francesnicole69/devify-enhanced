@@ -51,7 +51,11 @@ const containerVariants = {
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { type: "spring", stiffness: 100, damping: 20, mass: 1 }
+  },
 };
 
 export default function ServicesSection({ showHeader = true, showCards = true }: { showHeader?: boolean; showCards?: boolean }) {
@@ -76,8 +80,8 @@ export default function ServicesSection({ showHeader = true, showCards = true }:
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-20"
+              transition={{ duration: 0.6, type: "spring", stiffness: 100, damping: 20 }}
+              className="text-center mb-12 sm:mb-16 md:mb-20"
             >
               <span
                 className="inline-block text-sm font-semibold text-blue-400 uppercase tracking-widest mb-4"
@@ -113,7 +117,8 @@ export default function ServicesSection({ showHeader = true, showCards = true }:
               key={service.title}
               variants={cardVariants}
               whileHover={{ y: -8, boxShadow: "0 20px 50px rgba(59, 130, 246, 0.1)" }}
-              className="group relative glass-card rounded-2xl p-8 hover:bg-white/[0.08] hover:border-blue-500/40 transition-all duration-500 cursor-default overflow-hidden border border-white/8 hover:shadow-2xl hover:shadow-blue-500/10"
+              whileTap={{ scale: 0.98 }}
+              className="group relative glass-card rounded-premium p-6 sm:p-8 hover:bg-white/[0.08] hover:border-blue-500/40 transition-all duration-500 cursor-default overflow-hidden border border-white/8 hover:shadow-2xl hover:shadow-blue-500/10 active:scale-95"
             >
               {/* Animated background glow on hover */}
               <motion.div
@@ -124,8 +129,9 @@ export default function ServicesSection({ showHeader = true, showCards = true }:
               {/* Icon */}
               <motion.div
                 whileHover={{ scale: 1.15, rotate: 12 }}
+                whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 300, damping: 25, mass: 1 }}
-                className={`w-12 h-12 rounded-xl bg-gradient-to-br ${service.gradient} flex items-center justify-center mb-6 shadow-lg group-hover:shadow-2xl transition-shadow duration-500 z-10 relative`}
+                className={`w-12 h-12 rounded-lg sm:rounded-xl bg-gradient-to-br ${service.gradient} flex items-center justify-center mb-4 sm:mb-6 shadow-lg group-hover:shadow-2xl transition-shadow duration-500 z-10 relative`}
               >
                 <service.icon className="w-6 h-6 text-white" />
               </motion.div>

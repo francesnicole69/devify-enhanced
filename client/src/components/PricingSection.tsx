@@ -102,7 +102,7 @@ export default function PricingSection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, type: "spring", stiffness: 100, damping: 20 }}
           className="text-center mb-12 sm:mb-16 md:mb-20"
         >
           <span
@@ -131,8 +131,10 @@ export default function PricingSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className={`group relative rounded-2xl border ${plan.border} bg-gradient-to-br ${plan.gradient} backdrop-blur-xl p-6 flex flex-col hover:border-blue-500/50 transition-all duration-500 ${
+              transition={{ duration: 0.5, type: "spring", stiffness: 100, damping: 20 }}
+              whileHover={!plan.popular ? { y: -8 } : {}}
+              whileTap={{ scale: 0.98 }}
+              className={`group relative rounded-premium border ${plan.border} bg-gradient-to-br ${plan.gradient} backdrop-blur-xl p-6 flex flex-col hover:border-blue-500/50 transition-all duration-500 active:scale-95 ${
                 plan.popular ? "shadow-2xl shadow-blue-500/20 scale-[1.02] md:scale-[1.05]" : "hover:shadow-xl hover:shadow-blue-500/10"
               }`}
             >
@@ -143,7 +145,7 @@ export default function PricingSection() {
               )}
 
               {/* Modern glow overlay on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-violet-500/0 group-hover:from-blue-500/5 group-hover:to-violet-500/5 rounded-2xl transition-all duration-500 pointer-events-none"/>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-violet-500/0 group-hover:from-blue-500/5 group-hover:to-violet-500/5 rounded-premium transition-all duration-500 pointer-events-none"/>
               
               {/* Popular badge */}
               {plan.popular && (
@@ -158,7 +160,7 @@ export default function PricingSection() {
               {/* Plan header */}
               <div className="mb-4">
                 <h3
-                  className="text-lg sm:text-xl font-bold text-white mb-2 leading-tight"
+                  className="text-base sm:text-lg md:text-xl font-bold text-white mb-2 leading-tight"
                   style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}
                 >
                   {plan.name}

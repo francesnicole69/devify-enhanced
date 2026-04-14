@@ -55,7 +55,7 @@ export default function TestimonialsSection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, type: "spring", stiffness: 100, damping: 20 }}
           className="text-center mb-10 sm:mb-12 md:mb-16"
         >
           <span
@@ -92,7 +92,7 @@ export default function TestimonialsSection() {
                     whileInView={isMobile ? undefined : { opacity: 1, y: 0 }}
                     transition={isMobile ? { duration: 0 } : { delay: idx * 0.06, duration: 0.45 }}
                     viewport={isMobile ? undefined : { once: true, margin: "0px 0px -90px 0px" }}
-                    className="glass-card group w-[260px] sm:w-[300px] md:w-[340px] flex-shrink-0 rounded-premium p-4 sm:p-5 md:p-6 hover:border-blue-500/30 transition-colors duration-300 cursor-default"
+                    className="glass-card group w-[260px] sm:w-[300px] md:w-[340px] flex-shrink-0 rounded-premium p-4 sm:p-5 md:p-6 hover:border-blue-500/30 transition-colors duration-300 cursor-default active:scale-95"
                   >
                     {/* Decorative quote mark */}
                     <div className="text-2xl sm:text-3xl text-blue-500/20 mb-1 sm:mb-2 transition-colors duration-300 group-hover:text-blue-500/40">
@@ -116,7 +116,7 @@ export default function TestimonialsSection() {
                         initial={{ scaleX: 0 }}
                         whileHover={{ scaleX: 1 }}
                         transition={{ type: "spring", stiffness: 400, damping: 40 }}
-                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500 to-violet-500 origin-left rounded-b-2xl"
+                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500 to-violet-500 origin-left rounded-b-premium"
                       />
                     )}
                   </motion.article>

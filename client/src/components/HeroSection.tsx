@@ -107,8 +107,8 @@ export default function HeroSection() {
             variants={itemVariants}
             className="text-hero text-white font-extrabold"
           >
-            Websites That<br />
-            <span className="gradient-text">Convert Visitors Into Customers</span>
+            Build a Website<br />
+            <span className="gradient-text">That Sells</span>
           </motion.h1>
 
           {/* Subheadline */}

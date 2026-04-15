@@ -1,3 +1,4 @@
+import { useCanonical } from "@/hooks/useCanonical";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -5,6 +6,7 @@ import { motion } from "framer-motion";
 import { ChevronRight, FileText } from "lucide-react";
 
 export default function TermsOfService() {
+  useCanonical("/terms-of-service");
   const sections = [
     { id: "1-acceptance", title: "1. Acceptance of Terms" },
     { id: "2-use-license", title: "2. Use License" },

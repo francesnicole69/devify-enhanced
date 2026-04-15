@@ -3,6 +3,7 @@
    Dedicated page for Services content
    ============================================================ */
 
+import { useCanonical } from "@/hooks/useCanonical";
 import Navbar from "@/components/Navbar";
 import ServicesSection from "@/components/ServicesSection";
 import WebsiteSolutions from "@/components/WebsiteSolutions";
@@ -13,8 +14,9 @@ import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export default function Services() {
+  useCanonical("/services");
   return (
-    <div className="min-h-screen bg-[#080B14]">
+    <div className="min-h-screen bg-[#080B14]">  
       <Navbar />
       <ServicesSection showHeader={false} showCards={false} />
       <WebsiteSolutions />

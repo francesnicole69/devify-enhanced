@@ -1,11 +1,6 @@
-/* ============================================================
-   DEVIFY AboutSection — Dark Tech Minimalism
-   Mission statement, values, and why choose Devify
-   ============================================================ */
-
 import { motion } from "framer-motion";
 import { Target, Lightbulb, Heart, TrendingUp } from "lucide-react";
-import { useLocation } from "wouter";
+import { useLocation, Link } from "wouter";
 
 const values = [
   {
@@ -49,9 +44,7 @@ export default function AboutSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-[#080B14] via-[#0C1020] to-[#080B14] pointer-events-none" />
 
       <div className="container relative z-10">
-        {/* Main content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-24">
-          {/* Left: Text */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -82,7 +75,6 @@ export default function AboutSection() {
               We build conversion-focused websites that look amazing AND generate real results. Fast delivery. Transparent pricing. Results that matter. That's the Devify promise.
             </p>
 
-            {/* Quick stats */}
             <div className="grid grid-cols-2 gap-4">
               {whyUs.map((item) => (
                 <div
@@ -145,6 +137,24 @@ export default function AboutSection() {
           </motion.div>
         </div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-24 pt-24 border-t border-white/8 text-center"
+        >
+          <h3 className="text-2xl font-bold text-white mb-6">Learn More About Web Standards & Best Practices</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <a href="https://web.dev/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline text-sm">Google Web.dev - Web Best Practices</a>
+            <a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline text-sm">WCAG Accessibility Guidelines</a>
+            <a href="https://moz.com/beginners-guide-to-seo" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline text-sm">Moz - SEO Best Practices</a>
+            <a href="https://developers.google.com/search" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline text-sm">Google Search Central</a>
+          </div>
+          <div className="text-white/60 text-sm mb-6">
+            Ready to build? Check our <Link href="/pricing" className="text-blue-400 hover:text-blue-300 underline">pricing plans</Link> or <Link href="/contact" className="text-blue-400 hover:text-blue-300 underline">start your project</Link>.
+          </div>
+        </motion.div>
 
       </div>
     </section>

@@ -1,3 +1,4 @@
+import { useCanonical } from "@/hooks/useCanonical";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -5,6 +6,7 @@ import { motion } from "framer-motion";
 import { ChevronRight, Shield } from "lucide-react";
 
 export default function PrivacyPolicy() {
+  useCanonical("/privacy-policy");
   const sections = [
     { id: "1-introduction", title: "1. Introduction" },
     { id: "2-information-collected", title: "2. Information We Collect" },

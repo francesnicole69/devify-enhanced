@@ -1,9 +1,3 @@
-/* ============================================================
-   DEVIFY HeroSection — Dark Tech Minimalism
-   Full-height hero with gradient headline, stats, dual CTAs
-   Background: hero-bg image with dark overlay
-   ============================================================ */
-
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Star, Zap, Shield } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
@@ -56,7 +50,6 @@ export default function HeroSection() {
     offset: ["start start", "end start"],
   });
   
-  // Apply scroll transforms only on desktop
   const overlayOpacity = useTransform(scrollYProgress, [0, 1], [0.7, 0.9]);
   const bgY = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
@@ -66,7 +59,6 @@ export default function HeroSection() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image */}
       {!isMobile ? (
         <motion.div
           style={{ y: bgY, backgroundImage: `url(${HERO_BG})` }}
@@ -81,13 +73,11 @@ export default function HeroSection() {
           style={{ backgroundImage: `url(${HERO_BG})` }}
         />
       )}
-      {/* Dark overlay */}
       {shouldAnimate ? (
         <motion.div style={{ opacity: overlayOpacity }} className="absolute inset-0 bg-[#080B14]" />
       ) : (
         <div className="absolute inset-0 bg-[#080B14]/85" />
       )}
-      {/* Gradient overlay for depth */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#080B14]" />
 
       {/* Floating orbs */}
@@ -106,7 +96,6 @@ export default function HeroSection() {
           animate="visible"
           className="max-w-4xl mx-auto text-center space-y-8 sm:space-y-10 md:space-y-12"
         >
-          {/* Headline */}
           <motion.h1
             variants={itemVariants}
             className="text-hero text-white font-extrabold"
@@ -117,7 +106,6 @@ export default function HeroSection() {
             <span className="gradient-text">That Sells</span>
           </motion.h1>
 
-          {/* Subheadline */}
           <motion.p
             variants={itemVariants}
             className="text-sm sm:text-base md:text-lg text-white/70 max-w-3xl mx-auto leading-relaxed-body font-normal"
@@ -125,7 +113,6 @@ export default function HeroSection() {
             Professional websites built in 3–7 days. Mobile-optimized. Conversion-focused. Affordable. We don't just build websites—we build revenue machines for your business.
           </motion.p>
 
-          {/* CTA Buttons */}
           <motion.div
             variants={itemVariants}
             className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-2 sm:pt-4"
@@ -155,7 +142,6 @@ export default function HeroSection() {
             </motion.button>
           </motion.div>
 
-          {/* Stats */}
           <motion.div
             variants={itemVariants}
             className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 max-w-2xl mx-auto pt-4 sm:pt-6 md:pt-8"
@@ -189,7 +175,6 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       {!isMobile && (
         <motion.div
           initial={{ opacity: 0 }}

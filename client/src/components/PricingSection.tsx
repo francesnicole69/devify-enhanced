@@ -5,7 +5,7 @@
 
 import { motion } from "framer-motion";
 import { Check, ArrowRight, Star } from "lucide-react";
-import { useLocation } from "wouter";
+import { useLocation, Link } from "wouter";
 
 const plans = [
   {
@@ -277,6 +277,23 @@ export default function PricingSection() {
               </motion.div>
             ))}
           </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-20 pt-20 border-t border-white/8 text-center"
+        >
+          <h3 className="text-2xl font-bold text-white mb-4">Still deciding? Let's talk</h3>
+          <p className="text-white/60 mb-8">View our <Link href="/work" className="text-blue-400 hover:text-blue-300 underline">portfolio of websites</Link> or <Link href="/services" className="text-blue-400 hover:text-blue-300 underline">explore our services</Link>.</p>
+          <button
+            onClick={() => setLocation("/contact")}
+            className="btn-gradient inline-flex items-center gap-2 px-8 py-3 rounded-lg font-semibold text-white"
+          >
+            Get a Custom Quote
+          </button>
         </motion.div>
       </div>
     </section>

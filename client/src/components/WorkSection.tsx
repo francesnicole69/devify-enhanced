@@ -1,8 +1,3 @@
-/* ============================================================
-   DEVIFY WorkSection — Dark Tech Minimalism
-   Portfolio grid with laptop mockup images and hover overlays
-   ============================================================ */
-
 import { motion } from "framer-motion";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { useLocation } from "wouter";
@@ -51,11 +46,9 @@ export default function WorkSection() {
     <section id="work" className="py-24 md:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-[#080B14] pointer-events-none" />
 
-      {/* Subtle background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] rounded-full bg-violet-600/5 blur-3xl pointer-events-none" />
 
       <div className="container relative z-10">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -82,7 +75,6 @@ export default function WorkSection() {
           </p>
         </motion.div>
 
-        {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {projects.map((project, i) => (
             <motion.div
@@ -94,7 +86,6 @@ export default function WorkSection() {
             whileHover={{ y: -8, boxShadow: "0 20px 50px rgba(59, 130, 246, 0.1)" }}
               className={`group rounded-2xl overflow-hidden border ${project.borderColor} bg-gradient-to-br ${project.color} backdrop-blur-sm transition-all duration-500`}
             >
-              {/* Image */}
               <div className="relative overflow-hidden aspect-video">
                 <motion.img
                   src={project.image}

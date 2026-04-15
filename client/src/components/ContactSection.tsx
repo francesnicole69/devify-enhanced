@@ -1,8 +1,3 @@
-/* ============================================================
-   DEVIFY ContactSection — Dark Tech Minimalism
-   Contact form + WhatsApp/Email contact cards
-   ============================================================ */
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { MessageCircle, Mail, Send, CheckCircle, AlertCircle } from "lucide-react";
@@ -128,11 +123,9 @@ export default function ContactSection() {
     <section id="contact" className="py-24 md:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-[#080B14] via-[#0A0E1A] to-[#080B14] pointer-events-none" />
 
-      {/* Glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-blue-600/8 blur-3xl pointer-events-none" />
 
       <div className="container relative z-10">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -159,7 +152,6 @@ export default function ContactSection() {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 sm:gap-10 md:gap-12">
-          {/* Contact Methods */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -203,7 +195,6 @@ export default function ContactSection() {
               </a>
             ))}
 
-            {/* WhatsApp CTA */}
             <a
               href="https://wa.me/6592716106?text=Hi%20Devify!%20I'm%20interested%20in%20a%20website%20for%20my%20business."
               target="_blank"
@@ -215,7 +206,6 @@ export default function ContactSection() {
             </a>
           </motion.div>
 
-          {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -406,7 +396,6 @@ export default function ContactSection() {
                     )}
                   </div>
 
-                  {/* PDPA Consent Checkbox */}
                   <div className="flex items-start gap-3 p-4 bg-blue-500/5 border border-blue-500/20 rounded-xl">
                     <input
                       type="checkbox"
@@ -435,7 +424,6 @@ export default function ContactSection() {
                     </motion.p>
                   )}
 
-                  {/* Marketing Consent Checkbox */}
                   <div className="flex items-start gap-3 p-4 bg-white/5 border border-white/10 rounded-xl">
                     <input
                       type="checkbox"

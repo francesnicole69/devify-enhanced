@@ -3,6 +3,7 @@
    Dedicated page for About content
    ============================================================ */
 
+import { useCanonical } from "@/hooks/useCanonical";
 import Navbar from "@/components/Navbar";
 import AboutSection from "@/components/AboutSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -12,8 +13,9 @@ import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export default function About() {
+  useCanonical("/about");
   return (
-    <div className="min-h-screen bg-[#080B14]">
+    <div className="min-h-screen bg-[#080B14]">  
       <Navbar />
       <AboutSection />
       <TestimonialsSection />

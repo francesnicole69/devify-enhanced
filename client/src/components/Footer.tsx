@@ -1,8 +1,3 @@
-/* ============================================================
-   DEVIFY Footer — Dark Tech Minimalism
-   Clean footer with logo, nav links, social icons, copyright
-   ============================================================ */
-
 import { Code2, Instagram, Mail, MessageCircle } from "lucide-react";
 import { Link } from "wouter";
 
@@ -34,6 +29,15 @@ const footerLinks = [
       { label: "WhatsApp Us", href: "https://wa.me/6592716106" },
     ],
   },
+  {
+    title: "External Links",
+    links: [
+      { label: "Google Web Best Practices", href: "https://web.dev/" },
+      { label: "SEO Guide", href: "https://moz.com/beginners-guide-to-seo" },
+      { label: "Accessibility (WCAG)", href: "https://www.w3.org/WAI/WCAG21/quickref/" },
+      { label: "Google Search Central", href: "https://developers.google.com/search" },
+    ],
+  },
 ];
 
 export default function Footer() {
@@ -50,7 +54,6 @@ export default function Footer() {
     <footer className="relative bg-[#060810] border-t border-white/5">
       <div className="container py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
-          {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center">
@@ -71,7 +74,6 @@ export default function Footer() {
               Get online in 1–7 days with a website that actually works.
             </p>
 
-            {/* Social links */}
             <div className="flex items-center gap-3">
               <a
                 href="https://wa.me/6592716106"
@@ -124,10 +126,8 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Divider */}
         <div className="section-divider mb-6" />
 
-        {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p
             className="text-xs text-white/25"

@@ -6,6 +6,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Clock, CheckCircle } from "lucide-react";
 import { useLocation } from "wouter";
+import { Link } from "wouter";
 
 const guarantees = [
   { icon: Clock, text: "Live in 3–7 days" },
@@ -42,7 +43,7 @@ export default function CTABanner() {
           <p
             className="text-body-lg text-white/70 max-w-2xl mx-auto mb-12 leading-relaxed-body"
           >
-            Your competitors already have websites. Get yours built in days, not months. Join 50+ businesses getting real results with Devify.
+            Your competitors already have websites. Get yours built in days, not months. Join 50+ businesses getting real results with Devify. Check our <Link href="/work" className="text-blue-400 hover:text-blue-300 underline">portfolio</Link> to see what we've built.
           </p>
 
           {/* Guarantees */}
@@ -66,6 +67,9 @@ export default function CTABanner() {
             <span>Get My Free Quote Now</span>
             <ArrowRight className="w-5 h-5" />
           </button>
+          <div className="mt-6 text-sm text-white/50">
+            View our <Link href="/pricing" className="text-blue-400 hover:text-blue-300 underline">pricing plans</Link> or <Link href="/about" className="text-blue-400 hover:text-blue-300 underline">learn about us</Link>
+          </div>
         </motion.div>
       </div>
     </section>

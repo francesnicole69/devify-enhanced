@@ -1,8 +1,3 @@
-/* ============================================================
-   DEVIFY Navbar — Dark Tech Minimalism
-   Sticky top nav with glass effect, gradient logo, mobile menu
-   ============================================================ */
-
 import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
@@ -52,19 +47,16 @@ export default function Navbar() {
     >
       <div className="container">
         <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
-          {/* Logo */}
           <button
             onClick={() => handleNavClick("/")}
             className="relative group cursor-pointer flex items-center gap-3"
           >
-            {/* Animated background orbs - only on desktop */}
             {!isMobile && (
               <div className="absolute -inset-2">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-violet-600 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-all duration-500" />
               </div>
             )}
             
-            {/* Logo container */}
             <div className="relative z-10 p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 group-hover:border-blue-500/50 transition-all duration-300 group-hover:from-blue-500/10 group-hover:to-violet-600/10">
               <img
                 src="/images/ChatGPT Image Mar 21, 2026, 06_27_54 PM.png"
@@ -73,7 +65,6 @@ export default function Navbar() {
               />
             </div>
             
-            {/* Premium text label - hidden on mobile */}
             <div className="relative z-10 flex-col hidden sm:flex">
               <span className="font-extrabold text-base bg-gradient-to-r from-blue-400 via-blue-300 to-violet-400 bg-clip-text text-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
                 Devify
@@ -84,7 +75,6 @@ export default function Navbar() {
             </div>
           </button>
 
-          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => {
               const isActive = location === link.href;
@@ -100,7 +90,6 @@ export default function Navbar() {
                   style={{ fontFamily: 'Manrope, sans-serif' }}
                 >
                   {link.label}
-                  {/* Active indicator */}
                   {isActive && (
                     <motion.div
                       layoutId="navbar-indicator"
@@ -108,14 +97,12 @@ export default function Navbar() {
                       transition={{ type: "spring", stiffness: 400, damping: 40 }}
                     />
                   )}
-                  {/* Hover underline */}
                   <span className="absolute -bottom-1 left-0 w-0 h-px bg-gradient-to-r from-blue-500 to-violet-500 group-hover:w-full transition-all duration-300" />
                 </button>
               );
             })}
           </div>
 
-          {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <motion.button
               onClick={() => handleNavClick("/contact")}
@@ -137,7 +124,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

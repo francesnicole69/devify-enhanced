@@ -6,7 +6,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Globe, ShoppingCart, Image, Calendar, Zap, Rocket } from "lucide-react";
-import { useLocation } from "wouter";
+import { useLocation, Link } from "wouter";
 
 const solutions = [
   {
@@ -119,7 +119,7 @@ export default function WebsiteSolutions() {
             className="text-sm sm:text-base md:text-lg text-white/50 max-w-2xl mx-auto leading-relaxed-body"
             style={{ fontFamily: 'Manrope, sans-serif' }}
           >
-            We design and build modern websites tailored to different business needs. Choose what fits your goals.
+            We design and build modern websites tailored to different business needs. Choose what fits your goals. Check our <Link href="/pricing" className="text-blue-400 hover:text-blue-300 underline">pricing</Link> for detailed features.
           </p>
         </motion.div>
 

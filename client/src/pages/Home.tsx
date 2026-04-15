@@ -5,6 +5,7 @@
 
 import { useEffect } from "react";
 import { useLocation } from "wouter";
+import { useCanonical } from "@/hooks/useCanonical";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -13,6 +14,7 @@ import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export default function Home() {
   const [location] = useLocation();
+  useCanonical("/");
 
   useEffect(() => {
     if (location === "/" && window.scrollY > 0) {

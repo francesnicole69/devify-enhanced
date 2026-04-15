@@ -17,6 +17,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-[#080B14]">  
       <Navbar />
+      <h1 className="sr-only">About Devify web development agency in Singapore</h1>
       <AboutSection />
       <TestimonialsSection />
       <CTABanner />

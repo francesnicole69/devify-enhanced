@@ -16,6 +16,7 @@ export default function Pricing() {
   return (
     <div className="min-h-screen bg-[#080B14]">  
       <Navbar />
+      <h1 className="sr-only">Affordable website pricing for Singapore small businesses</h1>
       <PricingSection />
       <CTABanner />
       <ContactSection />

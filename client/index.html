@@ -16,39 +16,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <style>
-      .seo-fallback {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        border: 0;
-        white-space: nowrap;
+      .seo-links {
+        padding: 0.75rem 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        background: #060810;
+        color: #a8b0c0;
+        font: 500 0.8125rem/1.5 Inter, system-ui, -apple-system, Segoe UI, sans-serif;
+      }
+
+      .seo-links a {
+        color: #c6d4f0;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        margin-right: 0.75rem;
       }
     </style>
   </head>
   <body>
     <div id="root">
-      <div class="seo-fallback">
-        <nav aria-label="Devify quick links">
-          <a href="/services">Website Services</a>
-          <a href="/pricing">Pricing</a>
-          <a href="/work">Portfolio</a>
-          <a href="/contact">Contact</a>
-        </nav>
-        <p>
-          Helpful web resources:
-          <a href="https://developers.google.com/search/docs" rel="noopener noreferrer" target="_blank"> Google Search Central docs</a>,
-          <a href="https://web.dev/" rel="noopener noreferrer" target="_blank"> web.dev performance guidance</a>, and
-          <a href="https://www.w3.org/WAI/WCAG21/quickref/" rel="noopener noreferrer" target="_blank"> WCAG accessibility quick reference</a>.
-        </p>
-        <main>
-          <h1>Website Development Singapore for Small Businesses | Devify</h1>
-          <h2>Fast, Mobile-Optimized Website Design That Converts Visitors into Customers</h2>
-        </main>
-      </div>
       <noscript>
         <nav aria-label="Devify fallback navigation">
           <a href="/services">Services</a>
@@ -64,6 +49,18 @@
         </p>
       </noscript>
     </div>
+    <footer class="seo-links" aria-label="Helpful links">
+      <strong>Quick links:</strong>
+      <a href="/services">Services</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/work">Portfolio</a>
+      <a href="/contact">Contact</a>
+      <span> | </span>
+      <strong>Learn more:</strong>
+      <a href="https://developers.google.com/search/docs" rel="noopener noreferrer" target="_blank">Google Search Central</a>
+      <a href="https://web.dev/" rel="noopener noreferrer" target="_blank">web.dev</a>
+      <a href="https://www.w3.org/WAI/WCAG21/quickref/" rel="noopener noreferrer" target="_blank">WCAG</a>
+    </footer>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

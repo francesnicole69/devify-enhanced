@@ -41,11 +41,9 @@ const footerLinks = [
 ];
 
 export default function Footer() {
-  const handleNavClick = (href: string) => {
-    if (href.startsWith("http")) {
-      window.open(href, "_blank");
-      return;
-    }
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (!href.startsWith("#")) return;
+    e.preventDefault();
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
@@ -112,13 +110,16 @@ export default function Footer() {
               <ul className="space-y-2.5">
                 {section.links.map((link) => (
                   <li key={link.label}>
-                    <button
-                      onClick={() => handleNavClick(link.href)}
+                    <a
+                      href={link.href}
+                      onClick={(e) => handleNavClick(e, link.href)}
+                      target={link.href.startsWith("http") ? "_blank" : undefined}
+                      rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                       className="text-sm text-white/40 hover:text-white/80 transition-colors duration-200 text-left"
                       style={{ fontFamily: 'Manrope, sans-serif' }}
                     >
                       {link.label}
-                    </button>
+                    </a>
                   </li>
                 ))}
               </ul>

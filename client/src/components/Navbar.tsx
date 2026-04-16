@@ -32,7 +32,8 @@ export default function Navbar() {
     };
   }, []);
 
-  const handleNavClick = (href: string) => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
     setIsOpen(false);
     setLocation(href);
   };
@@ -47,8 +48,9 @@ export default function Navbar() {
     >
       <div className="container">
         <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
-          <button
-            onClick={() => handleNavClick("/")}
+          <a
+            href="/"
+            onClick={(e) => handleNavClick(e, "/")}
             className="relative group cursor-pointer flex items-center gap-3"
           >
             {!isMobile && (
@@ -73,15 +75,16 @@ export default function Navbar() {
                 Studio
               </span>
             </div>
-          </button>
+          </a>
 
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => {
               const isActive = location === link.href;
               return (
-                <button
+                <a
                   key={link.href}
-                  onClick={() => handleNavClick(link.href)}
+                  href={link.href}
+                  onClick={(e) => handleNavClick(e, link.href)}
                   className={`text-sm font-medium px-3 py-2 rounded-lg transition-all duration-300 relative group ${
                     isActive
                       ? "text-blue-400"
@@ -98,20 +101,21 @@ export default function Navbar() {
                     />
                   )}
                   <span className="absolute -bottom-1 left-0 w-0 h-px bg-gradient-to-r from-blue-500 to-violet-500 group-hover:w-full transition-all duration-300" />
-                </button>
+                </a>
               );
             })}
           </div>
 
           <div className="hidden md:flex items-center gap-4">
-            <motion.button
-              onClick={() => handleNavClick("/contact")}
+            <motion.a
+              href="/contact"
+              onClick={(e) => handleNavClick(e, "/contact")}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="btn-gradient px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-all duration-300"
             >
               <span>Start Your Website</span>
-            </motion.button>
+            </motion.a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -137,9 +141,10 @@ export default function Navbar() {
               {navLinks.map((link, i) => {
                 const isActive = location === link.href;
                 return (
-                  <button
+                  <a
                     key={link.href}
-                    onClick={() => handleNavClick(link.href)}
+                    href={link.href}
+                    onClick={(e) => handleNavClick(e, link.href)}
                     className={`text-left text-sm sm:text-base font-medium px-4 py-2.5 rounded-lg transition-all duration-300 active:scale-95 ${
                       isActive
                         ? "text-blue-400 bg-blue-500/10"
@@ -148,15 +153,16 @@ export default function Navbar() {
                     style={{ fontFamily: 'Manrope, sans-serif' }}
                   >
                     {link.label}
-                  </button>
+                  </a>
                 );
               })}
-              <button
-                onClick={() => handleNavClick("/contact")}
+              <a
+                href="/contact"
+                onClick={(e) => handleNavClick(e, "/contact")}
                 className="btn-gradient mt-3 sm:mt-4 px-5 py-3 rounded-premium text-sm font-semibold text-white text-center"
               >
                 <span>Start Your Website</span>
-              </button>
+              </a>
             </div>
           </motion.div>
         )}

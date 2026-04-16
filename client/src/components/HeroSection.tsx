@@ -96,15 +96,16 @@ export default function HeroSection() {
           animate="visible"
           className="max-w-4xl mx-auto text-center space-y-8 sm:space-y-10 md:space-y-12"
         >
-          <motion.h1
+          <motion.div
             variants={itemVariants}
-            className="text-hero text-white font-extrabold"
             whileInView={{ opacity: 1 }}
             initial={{ opacity: 0 }}
           >
-            Build a Website<br />
-            <span className="gradient-text">That Sells</span>
-          </motion.h1>
+            <h2 className="text-hero text-white font-extrabold">
+              Build a Website<br />
+              <span className="gradient-text">That Sells</span>
+            </h2>
+          </motion.div>
 
           <motion.p
             variants={itemVariants}

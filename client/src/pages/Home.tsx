@@ -24,6 +24,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#080B14]">
+      <h1 className="sr-only">Website Development Singapore for Small Businesses | Devify</h1>
       <Navbar />
       <HeroSection />
       <ServicesSection />

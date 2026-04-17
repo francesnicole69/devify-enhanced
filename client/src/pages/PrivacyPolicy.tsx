@@ -112,7 +112,7 @@ export default function PrivacyPolicy() {
                       <span>Introduction</span>
                     </h2>
                     <p className="text-body text-white/70 leading-relaxed-body mb-4">
-                      Devify ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website www.devify.sg (the "Website").
+                      Arion ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website www.arionworks.com (the "Website").
                     </p>
                     <p className="text-body text-white/70 leading-relaxed-body">
                       Please read this privacy policy carefully. If you do not agree with our policies and practices, please do not use our Website.
@@ -423,9 +423,9 @@ export default function PrivacyPolicy() {
                       If you have questions about this Privacy Policy or wish to exercise your rights, contact us at:
                     </p>
                     <div className="bg-white/5 rounded-lg p-4 border border-white/10 mb-6">
-                      <p className="text-white font-semibold mb-2">Devify Singapore</p>
+                      <p className="text-white font-semibold mb-2">Arion Singapore</p>
                       <p className="text-white/70">Email: <a href="mailto:alsonchinn1@gmail.com" className="text-green-400 hover:text-green-300 transition-colors">alsonchinn1@gmail.com</a></p>
-                      <p className="text-white/70">Website: <a href="https://www.devify.sg" className="text-green-400 hover:text-green-300 transition-colors">www.devify.sg</a></p>
+                      <p className="text-white/70">Website: <a href="https://www.arionworks.com" className="text-green-400 hover:text-green-300 transition-colors">www.arionworks.com</a></p>
                     </div>
                     <p className="text-body text-white/70 leading-relaxed-body mb-4">
                       <strong>PDPA Complaint Escalation:</strong>

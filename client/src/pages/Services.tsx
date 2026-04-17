@@ -1,5 +1,5 @@
 /* ============================================================
-   DEVIFY Services Page
+  ARION Services Page
    Dedicated page for Services content
    ============================================================ */
 

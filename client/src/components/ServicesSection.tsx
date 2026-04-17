@@ -1,5 +1,5 @@
 /* ============================================================
-   DEVIFY ServicesSection — Dark Tech Minimalism
+  ARION ServicesSection — Dark Tech Minimalism
    Grid of service cards with gradient icons and hover effects
    ============================================================ */
 
@@ -87,7 +87,7 @@ export default function ServicesSection({ showHeader = true, showCards = true }:
               <span
                 className="inline-block text-sm font-semibold text-blue-400 uppercase tracking-widest mb-4"
               >
-                Why Choose Devify
+                Why Choose Arion
               </span>
               <h2
                 className="text-section-heading text-white mb-5 leading-tight-heading font-extrabold"

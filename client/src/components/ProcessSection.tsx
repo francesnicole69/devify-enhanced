@@ -1,5 +1,5 @@
 /* ============================================================
-   DEVIFY ProcessSection — Dark Tech Minimalism
+  ARION ProcessSection — Dark Tech Minimalism
    Step-by-step process with connecting lines and gradient numbers
    Background: process-bg image with dark overlay
    ============================================================ */

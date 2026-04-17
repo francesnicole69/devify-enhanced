@@ -5,12 +5,12 @@ const testimonials = [
   {
     name: "Sarah Lim",
     content:
-      "Devify built my flower shop website in just 3 days. It looks stunning and I've already gotten 8 new orders in the first week! Best investment for my business.",
+      "Arion built my flower shop website in just 3 days. It looks stunning and I've already gotten 8 new orders in the first week! Best investment for my business.",
   },
   {
     name: "Marcus Tan",
     content:
-      "I needed a professional portfolio to attract high-ticket clients. Devify delivered a site that looks like it cost $5,000, but for a fraction of the price. My conversion rate doubled.",
+      "I needed a professional portfolio to attract high-ticket clients. Arion delivered a site that looks like it cost $5,000, but for a fraction of the price. My conversion rate doubled.",
   },
   {
     name: "Priya Nair",
@@ -25,7 +25,7 @@ const testimonials = [
   {
     name: "Mei Lin",
     content:
-      "We went from zero online presence to a fully automated booking system. Devify saved us hours of manual work every week. Our revenue is up 30% since launch.",
+      "We went from zero online presence to a fully automated booking system. Arion saved us hours of manual work every week. Our revenue is up 30% since launch.",
   },
   {
     name: "Ahmad Rizal",
@@ -72,7 +72,7 @@ export default function TestimonialsSection() {
           <p
             className="text-sm sm:text-base md:text-lg text-white/70 max-w-2xl mx-auto leading-relaxed-body"
           >
-            See how real Singapore businesses are getting more customers, more bookings, and more revenue with their Devify websites.
+            See how real Singapore businesses are getting more customers, more bookings, and more revenue with their Arion websites.
           </p>
         </motion.div>
 

@@ -1,5 +1,5 @@
 /* ============================================================
-   DEVIFY Contact Page
+  ARION Contact Page
    Dedicated page for Contact content
    ============================================================ */
 
@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-[#080B14]">  
       <Navbar />
-      <h1 className="sr-only">Contact Devify for website development in Singapore</h1>
+      <h1 className="sr-only">Contact Arion for website development in Singapore</h1>
       <ContactSection />
       <Footer />
       <FloatingWhatsApp />

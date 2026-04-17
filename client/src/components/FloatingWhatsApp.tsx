@@ -1,5 +1,5 @@
 /* ============================================================
-   DEVIFY FloatingWhatsApp — Dark Tech Minimalism
+  ARION FloatingWhatsApp — Dark Tech Minimalism
    Fixed floating WhatsApp button for quick contact
    ============================================================ */
 
@@ -51,7 +51,7 @@ export default function FloatingWhatsApp() {
               Chat with us on WhatsApp and get a free quote within 1 hour!
             </p>
             <a
-              href="https://wa.me/6592716106?text=Hi%20Devify!%20I'm%20interested%20in%20a%20website%20for%20my%20business."
+              href="https://wa.me/6592716106?text=Hi%20Arion!%20I'm%20interested%20in%20a%20website%20for%20my%20business."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gradient flex items-center justify-center gap-2 py-2 px-4 rounded-xl text-xs font-semibold text-white"

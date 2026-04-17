@@ -54,7 +54,7 @@ export default function AboutSection() {
             <span
               className="inline-block text-sm font-semibold text-blue-400 uppercase tracking-widest mb-4"
             >
-              About Devify
+              About Arion
             </span>
             <h2
               className="text-section-heading text-white mb-6 leading-tight-heading font-extrabold"
@@ -66,13 +66,13 @@ export default function AboutSection() {
               className="text-body-lg text-white/60 mb-6 leading-relaxed-body"
               style={{ fontFamily: 'Manrope, sans-serif' }}
             >
-              Devify was founded to solve a real problem: Singapore businesses are losing customers to competitors with better online presence. Most web agencies build beautiful websites that don't convert. We're different.
+              Arion was founded to solve a real problem: Singapore businesses are losing customers to competitors with better online presence. Most web agencies build beautiful websites that don't convert. We're different.
             </p>
             <p
               className="text-white/60 text-lg leading-relaxed mb-8"
               style={{ fontFamily: 'Manrope, sans-serif' }}
             >
-              We build conversion-focused websites that look amazing AND generate real results. Fast delivery. Transparent pricing. Results that matter. That's the Devify promise.
+              We build conversion-focused websites that look amazing AND generate real results. Fast delivery. Transparent pricing. Results that matter. That's the Arion promise.
             </p>
 
             <div className="grid grid-cols-2 gap-4">

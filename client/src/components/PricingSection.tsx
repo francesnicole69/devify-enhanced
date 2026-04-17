@@ -1,5 +1,5 @@
 /* ============================================================
-   DEVIFY PricingSection — Dark Tech Minimalism
+  ARION PricingSection — Dark Tech Minimalism
    Three glass-morphism pricing cards with gradient highlight on popular
    ============================================================ */
 

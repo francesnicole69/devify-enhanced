@@ -1,5 +1,5 @@
 /* ============================================================
-   DEVIFY Pricing Page
+  ARION Pricing Page
    Dedicated page for Pricing content
    ============================================================ */
 

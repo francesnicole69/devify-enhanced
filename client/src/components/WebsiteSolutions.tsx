@@ -1,5 +1,5 @@
 /* ============================================================
-   DEVIFY WebsiteSolutions — Dark Tech Minimalism
+  ARION WebsiteSolutions — Dark Tech Minimalism
    Service showcase: 6 types of websites we build
    Replaces the old portfolio "Work" section
    ============================================================ */

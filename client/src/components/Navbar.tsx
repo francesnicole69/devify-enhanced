@@ -59,17 +59,18 @@ export default function Navbar() {
               </div>
             )}
             
-            <div className="relative z-10 p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 group-hover:border-blue-500/50 transition-all duration-300 group-hover:from-blue-500/10 group-hover:to-violet-600/10">
-              <img
-                src="/images/ChatGPT Image Mar 21, 2026, 06_27_54 PM.png"
-                alt="Devify Logo"
-                className="h-8 sm:h-10 w-auto transition-all duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_20px_rgba(59,130,246,0.4)]"
+            <div className="relative z-10 p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 group-hover:border-blue-500/50 transition-all duration-300 group-hover:from-blue-500/10 group-hover:to-violet-600/10 overflow-hidden">
+              <div
+                role="img"
+                aria-label="Arion Logo"
+                className="h-10 w-10 sm:h-12 sm:w-12 rounded-lg bg-no-repeat bg-center transition-all duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_20px_rgba(59,130,246,0.4)]"
+                style={{ backgroundImage: 'url("/images/arion.png")', backgroundSize: '170% auto', backgroundPosition: 'center 30%' }}
               />
             </div>
             
             <div className="relative z-10 flex-col hidden sm:flex">
               <span className="font-extrabold text-base bg-gradient-to-r from-blue-400 via-blue-300 to-violet-400 bg-clip-text text-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
-                Devify
+                Arion
               </span>
               <span className="text-xs font-medium text-white/30 group-hover:text-white/70 transition-all duration-300 tracking-widest uppercase">
                 Studio

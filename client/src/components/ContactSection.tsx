@@ -8,7 +8,7 @@ const contactMethods = [
     title: "WhatsApp",
     value: "+65 92716106",
     description: "Fastest response — usually within 1 hour",
-    href: "https://wa.me/6592716106?text=Hi%20Devify!%20I'm%20interested%20in%20a%20website%20for%20my%20business.",
+    href: "https://wa.me/6592716106?text=Hi%20Arion!%20I'm%20interested%20in%20a%20website%20for%20my%20business.",
     gradient: "from-green-500 to-emerald-500",
     cta: "Chat on WhatsApp",
   },
@@ -97,7 +97,7 @@ export default function ContactSection() {
           business: formData.business,
           budget: formData.budget,
           message: formData.message,
-          _subject: "New Devify Quote Request",
+          _subject: "New Arion Quote Request",
           _template: "table",
           _captcha: "false",
         }),
@@ -196,7 +196,7 @@ export default function ContactSection() {
             ))}
 
             <a
-              href="https://wa.me/6592716106?text=Hi%20Devify!%20I'm%20interested%20in%20a%20website%20for%20my%20business."
+              href="https://wa.me/6592716106?text=Hi%20Arion!%20I'm%20interested%20in%20a%20website%20for%20my%20business."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gradient flex items-center justify-center gap-2 py-4 rounded-premium text-sm font-semibold text-white mt-4"
@@ -438,7 +438,7 @@ export default function ContactSection() {
                       className="text-xs text-white/60 leading-relaxed cursor-pointer"
                       style={{ fontFamily: 'Manrope, sans-serif' }}
                     >
-                      <span className="font-semibold text-white">I would like to receive marketing and promotional updates</span> from Devify about new services, updates, and special offers. You can unsubscribe anytime.
+                      <span className="font-semibold text-white">I would like to receive marketing and promotional updates</span> from Arion about new services, updates, and special offers. You can unsubscribe anytime.
                     </label>
                   </div>
 

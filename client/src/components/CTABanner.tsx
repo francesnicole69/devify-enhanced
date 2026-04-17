@@ -1,5 +1,5 @@
 /* ============================================================
-   DEVIFY CTABanner — Dark Tech Minimalism
+  ARION CTABanner — Dark Tech Minimalism
    Full-width gradient CTA banner before the contact section
    ============================================================ */
 
@@ -43,7 +43,7 @@ export default function CTABanner() {
           <p
             className="text-body-lg text-white/70 max-w-2xl mx-auto mb-12 leading-relaxed-body"
           >
-            Your competitors already have websites. Get yours built in days, not months. Join 50+ businesses getting real results with Devify. Check our <Link href="/work" className="text-blue-400 hover:text-blue-300 underline">portfolio</Link> to see what we've built.
+            Your competitors already have websites. Get yours built in days, not months. Join 50+ businesses getting real results with Arion. Check our <Link href="/work" className="text-blue-400 hover:text-blue-300 underline">portfolio</Link> to see what we've built.
           </p>
 
           {/* Guarantees */}

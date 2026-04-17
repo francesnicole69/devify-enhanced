@@ -61,7 +61,7 @@ export default function Footer() {
                 className="font-extrabold text-xl text-white"
                 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800 }}
               >
-                Devify
+                Arion
               </span>
             </div>
             <p
@@ -82,7 +82,7 @@ export default function Footer() {
                 <MessageCircle className="w-4 h-4" />
               </a>
               <a
-                href="https://instagram.com/devify.sg"
+                href="https://instagram.com/arionworks"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-xl bg-white/5 border border-white/8 flex items-center justify-center text-white/50 hover:text-white hover:bg-white/10 hover:border-white/15 transition-all duration-200"
@@ -90,7 +90,7 @@ export default function Footer() {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="mailto:hello@devify.sg"
+                href="mailto:hello@arionworks.com"
                 className="w-9 h-9 rounded-xl bg-white/5 border border-white/8 flex items-center justify-center text-white/50 hover:text-white hover:bg-white/10 hover:border-white/15 transition-all duration-200"
               >
                 <Mail className="w-4 h-4" />
@@ -134,7 +134,7 @@ export default function Footer() {
             className="text-xs text-white/25"
             style={{ fontFamily: 'Manrope, sans-serif' }}
           >
-            © {new Date().getFullYear()} Devify. All rights reserved. Built in Singapore 🇸🇬
+            © {new Date().getFullYear()} Arion. All rights reserved. Built in Singapore 🇸🇬
           </p>
           <div className="flex items-center gap-6">
             <Link

@@ -1,5 +1,5 @@
 /* ============================================================
-   DEVIFY TrustBar — Dark Tech Minimalism
+  ARION TrustBar — Dark Tech Minimalism
    Tech stack logos and trust signals below hero
    ============================================================ */
 

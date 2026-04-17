@@ -1,5 +1,5 @@
 /* ============================================================
-   DEVIFY About Page
+  ARION About Page
    Dedicated page for About content
    ============================================================ */
 
@@ -17,7 +17,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-[#080B14]">  
       <Navbar />
-      <h1 className="sr-only">About Devify web development agency in Singapore</h1>
+      <h1 className="sr-only">About Arion web development agency in Singapore</h1>
       <AboutSection />
       <TestimonialsSection />
       <CTABanner />

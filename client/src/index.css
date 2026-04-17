@@ -1,5 +1,5 @@
 /* ============================================================
-   DEVIFY — Dark Tech Minimalism Design System
+  ARION — Dark Tech Minimalism Design System
    Design Philosophy: Premium SaaS Aesthetic
    Background: #080B14 (near-black navy)
    Primary Gradient: #3B82F6 (blue) → #8B5CF6 (violet)
@@ -49,7 +49,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* Custom Devify tokens */
+  /* Custom Arion tokens */
   --font-display: 'Inter', sans-serif;
   --font-body: 'Inter', sans-serif;
 }

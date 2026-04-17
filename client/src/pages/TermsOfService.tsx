@@ -54,7 +54,7 @@ export default function TermsOfService() {
               </span>
             </h1>
             <p className="text-body-lg text-white/50 max-w-2xl mx-auto leading-relaxed-body">
-              Please read our terms carefully. By using Devify, you agree to these conditions.
+              Please read our terms carefully. By using Arion, you agree to these conditions.
             </p>
           </motion.div>
 
@@ -111,7 +111,7 @@ export default function TermsOfService() {
                       <span>Acceptance of Terms</span>
                     </h2>
                     <p className="text-body text-white/70 leading-relaxed-body">
-                      By accessing and using this Website (www.devify.sg) ("Website"), you accept and agree to be bound by the terms and provision of this agreement. Devify ("Company," "we," "us," or "our") provides this Website on an "as-is" basis. If you do not agree to abide by the above, please do not use this service.
+                      By accessing and using this Website (www.arionworks.com) ("Website"), you accept and agree to be bound by the terms and provision of this agreement. Arion ("Company," "we," "us," or "our") provides this Website on an "as-is" basis. If you do not agree to abide by the above, please do not use this service.
                     </p>
                   </motion.div>
                 </section>
@@ -128,7 +128,7 @@ export default function TermsOfService() {
                       <span className="text-blue-400">02</span>
                       <span>Use License</span>
                     </h2>
-                    <p className="text-body text-white/70 leading-relaxed-body mb-4">Permission is granted to temporarily download one copy of the materials (information or software) on Devify's Website for personal, non-commercial transitory viewing only. Under this license, you may not:</p>
+                    <p className="text-body text-white/70 leading-relaxed-body mb-4">Permission is granted to temporarily download one copy of the materials (information or software) on Arion's Website for personal, non-commercial transitory viewing only. Under this license, you may not:</p>
                     <div className="space-y-2 ml-6 bg-white/5 rounded-xl p-6">
                       {["Modify or copy the materials", "Use the materials for any commercial purpose or public display", "Attempt to decompile or reverse engineer any software", "Remove any copyright or other proprietary notations", "Transfer the materials to another person or mirror the materials", "Violate any applicable laws or regulations"].map((item, i) => (
                         <div key={i} className="flex items-start gap-3 text-body text-white/70 leading-relaxed-body">
@@ -153,7 +153,7 @@ export default function TermsOfService() {
                       <span>Disclaimer</span>
                     </h2>
                     <p className="text-white/70 leading-relaxed">
-                      The materials on Devify's Website are provided on an "as-is" basis. Devify makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+                      The materials on Arion's Website are provided on an "as-is" basis. Arion makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
                     </p>
                   </motion.div>
                 </section>
@@ -171,7 +171,7 @@ export default function TermsOfService() {
                       <span>Modifications</span>
                     </h2>
                     <p className="text-white/70 leading-relaxed">
-                      Devify may revise these Terms of Service for its Website at any time without notice. By using this Website, you are agreeing to be bound by the then current version of these Terms of Service. We will notify users of significant changes via email or prominent notice on the Website.
+                      Arion may revise these Terms of Service for its Website at any time without notice. By using this Website, you are agreeing to be bound by the then current version of these Terms of Service. We will notify users of significant changes via email or prominent notice on the Website.
                     </p>
                   </motion.div>
                 </section>
